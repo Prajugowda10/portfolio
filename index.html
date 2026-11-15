@@ -1,339 +1,952 @@
-<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#fff;color:#000}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
-<title>Prajwal Ramachandra Portfolio</title>
-<meta name="claude:viewport-fit-sides" content="cover">
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Prajwal Ramachandra | CRM Developer: Zoho, Salesforce, HubSpot, Dynamics 365</title>
+<meta name="description" content="Prajwal Ramachandra: CRM developer and consultant. Four years on Zoho in production, Salesforce trained, open to HubSpot and Microsoft Dynamics 365 roles.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23ffc83d'/%3E%3Cstop offset='1' stop-color='%23ff7a18'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='32' y='43' text-anchor='middle' font-family='Arial' font-weight='800' font-size='30' fill='%232a1400'%3EPR%3C/text%3E%3C/svg%3E">
+<meta name="theme-color" content="#0e0905">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Prajwal Ramachandra | CRM Developer: Zoho, Salesforce, HubSpot, Dynamics 365">
+<meta property="og:description" content="Four years on Zoho in production, Salesforce trained, open to CRM developer and consultant roles.">
+<meta property="og:image" content="https://prajwal-ramachandra.pages.dev/img/og-image.png">
+<meta property="og:url" content="https://prajwal-ramachandra.pages.dev/">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://prajwal-ramachandra.pages.dev/img/og-image.png">
+<!-- Cloudflare Web Analytics: in the Cloudflare dashboard open Analytics > Web Analytics, add this site, and paste the snippet it gives you just before </body>. -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500&display=swap">
 <style>
-/* Layout: case-file pages. A mono label column (period, role, stack) sits beside the narrative, like a systems record. */
 :root{
-  --bg:#f4f7f7; --surface:#ffffff; --fg:#13202a; --muted:#566673; --rule:#d3dddf;
-  --accent:#0d6666; --accent-ink:#ffffff; --tint:#e3f0ef; --live:#16794c; --live-bg:#dff3e8;
-  --prog:#8a5a00; --prog-bg:#fbeccb; --next:#4d5b66; --next-bg:#e6ebee;
+  --bg:#0e0905;--bg2:#150f09;--surface:#1c1510;--surface2:#271d13;--fg:#fff6ea;--muted:#bba892;--rule:#34261a;
+  --a:#ffc83d;--a2:#ff7a18;--a3:#ff5e3a;--a4:#e8452c;--ink:#2a1400;--ok:#4ade80;
+  --glow:rgba(255,170,40,.18);--navbg:rgba(14,9,5,.74);--grid:#2c2017;
   --display:"Bricolage Grotesque","Segoe UI",system-ui,sans-serif;
   --body:"IBM Plex Sans","Segoe UI",system-ui,sans-serif;
-  --mono:"IBM Plex Mono",ui-monospace,Menlo,Consolas,monospace;
+  --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  color-scheme:dark;
 }
-@media (prefers-color-scheme: dark){:root:not([data-theme="light"]){
-  --bg:#0d1416; --surface:#141d20; --fg:#e4ecee; --muted:#93a4ab; --rule:#27363b;
-  --accent:#5fc4bd; --accent-ink:#06201f; --tint:#16292b; --live:#6fd3a0; --live-bg:#15301f;
-  --prog:#f0c26a; --prog-bg:#33290f; --next:#a9b7be; --next-bg:#222e33; color-scheme:dark}}
-:root[data-theme="dark"]{
-  --bg:#0d1416; --surface:#141d20; --fg:#e4ecee; --muted:#93a4ab; --rule:#27363b;
-  --accent:#5fc4bd; --accent-ink:#06201f; --tint:#16292b; --live:#6fd3a0; --live-bg:#15301f;
-  --prog:#f0c26a; --prog-bg:#33290f; --next:#a9b7be; --next-bg:#222e33; color-scheme:dark}
-
+:root[data-theme="light"]{
+  --bg:#fffaf0;--bg2:#fff1da;--surface:#ffffff;--surface2:#fff4e2;--fg:#2a1a0c;--muted:#6f5a45;--rule:#efdcc0;
+  --a:#d97706;--a2:#ea580c;--a3:#c2410c;--a4:#b91c1c;--ink:#ffffff;--ok:#15803d;
+  --glow:rgba(234,120,12,.14);--navbg:rgba(255,250,240,.82);--grid:#f3e4cc;color-scheme:light}
 *{box-sizing:border-box}
-html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--fg);font:400 15.5px/1.6 var(--body);
-  padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px));margin:0}
-a{color:var(--accent);text-underline-offset:3px}
-a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:3px}
-.wrap{max-width:1040px;margin:0 auto}
-.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.02em}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
+body{margin:0;background:var(--bg);color:var(--fg);font:400 16.5px/1.65 var(--body);overflow-x:hidden;
+  -webkit-font-smoothing:antialiased}
+a{color:inherit}
+a:focus-visible,button:focus-visible{outline:2px solid var(--a);outline-offset:3px;border-radius:6px}
+.wrap > *,.case > *,.about > *,.sf > *,.cform > *{min-width:0}
+.wrap{max-width:1160px;margin:0 auto;padding:0 max(20px,env(safe-area-inset-left))}
+h1,h2,h3,h4{font-family:var(--display);letter-spacing:-.025em;margin:0;line-height:1.08}
+.mono{font-family:var(--mono);font-size:12.5px;letter-spacing:.04em}
+.eyebrow{font-family:var(--mono);font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--a);display:flex;align-items:center;gap:10px;margin-bottom:14px}
+.eyebrow::before{content:"";width:28px;height:1px;background:var(--a)}
+.grad{background:linear-gradient(100deg,var(--a),var(--a2) 55%,var(--a4));-webkit-background-clip:text;background-clip:text;color:transparent}
 
-/* top bar */
-.bar{display:flex;flex-wrap:wrap;gap:8px 22px;align-items:center;justify-content:space-between;padding-block:18px;border-bottom:1px solid var(--rule)}
-.bar b{font-family:var(--display);font-weight:700;font-size:17px;letter-spacing:-.01em}
-.bar nav{display:flex;flex-wrap:wrap;gap:6px 18px}
-.bar nav a{font-family:var(--mono);font-size:12px;color:var(--muted);text-decoration:none;text-transform:uppercase;letter-spacing:.06em}
-.bar nav a:hover{color:var(--accent)}
+/* NAV */
+nav.nav{position:fixed;inset:0 0 auto 0;z-index:50;background:var(--navbg);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-bottom:1px solid var(--rule)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:64px}
+.logo{font:800 19px var(--display);text-decoration:none;letter-spacing:-.03em;display:flex;align-items:center;gap:9px}
+.logo i img{width:100%;height:100%;border-radius:9px;object-fit:cover;display:block}
+.logo i{overflow:hidden;width:30px;height:30px;border-radius:9px;background:linear-gradient(135deg,var(--a),var(--a2));display:grid;place-items:center;color:var(--ink);font:800 13px var(--display);font-style:normal}
+.links{display:flex;gap:4px;align-items:center}
+.links a{font-size:14px;color:var(--muted);text-decoration:none;padding:7px 12px;border-radius:8px;transition:.2s}
+.links a:hover,.links a.on{color:var(--fg);background:var(--surface)}
+.nav-r{display:flex;gap:10px;align-items:center}
+.iconbtn{width:38px;height:38px;border-radius:10px;border:1px solid var(--rule);background:var(--surface);color:var(--fg);cursor:pointer;display:grid;place-items:center;font-size:16px}
+.iconbtn:hover{border-color:var(--a)}
+.btn{display:inline-flex;align-items:center;gap:8px;font:600 14.5px var(--body);text-decoration:none;padding:12px 22px;border-radius:12px;border:1px solid var(--rule);background:var(--surface);color:var(--fg);cursor:pointer;transition:transform .2s,border-color .2s,box-shadow .2s}
+.btn:hover{transform:translateY(-2px);border-color:var(--a)}
+.btn.p{background:linear-gradient(120deg,var(--a),var(--a2));color:var(--ink);border:0;box-shadow:0 8px 28px -8px var(--glow),0 0 0 1px rgba(255,255,255,.06) inset}
+.btn.p:hover{box-shadow:0 12px 34px -6px var(--a)}
+.menu{display:none}
 
-/* hero */
-.hero{padding-block:56px 40px;display:grid;grid-template-columns:minmax(0,1.35fr) minmax(0,1fr);gap:40px;align-items:end}
-.hero h1{font-family:var(--display);font-weight:700;font-size:clamp(38px,6.4vw,68px);line-height:1;letter-spacing:-.03em;margin:0 0 18px;text-wrap:balance}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.hero p{max-width:52ch;margin:0 0 18px;color:var(--muted);font-size:16.5px}
-.contact{display:flex;flex-wrap:wrap;gap:8px 18px}
-.contact span,.contact a{font-family:var(--mono);font-size:12.5px}
-.stats{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:1px;background:var(--rule);border:1px solid var(--rule);border-radius:6px;overflow:hidden}
-.stat{background:var(--surface);padding:16px 18px}
-.stat b{display:block;font-family:var(--display);font-size:30px;line-height:1.05;color:var(--accent);font-variant-numeric:tabular-nums}
-.stat span{font-size:12.5px;color:var(--muted);line-height:1.35;display:block;margin-top:4px}
+/* HERO */
+.hero{position:relative;padding:150px 0 90px;overflow:hidden}
+.hero::before{content:"";position:absolute;inset:0;background:
+  radial-gradient(ellipse 60% 50% at 78% 18%,var(--glow),transparent 70%),
+  radial-gradient(ellipse 40% 40% at 10% 90%,rgba(255,94,58,.10),transparent 70%);pointer-events:none}
+.hero::after{content:"";position:absolute;inset:0;background-image:linear-gradient(var(--grid) 1px,transparent 1px),linear-gradient(90deg,var(--grid) 1px,transparent 1px);background-size:56px 56px;opacity:.35;-webkit-mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent 75%);mask-image:radial-gradient(ellipse 70% 60% at 50% 30%,#000,transparent 75%);pointer-events:none}
+.hero .wrap{position:relative;z-index:1;display:grid;grid-template-columns:minmax(0,1.25fr) minmax(0,.75fr);gap:48px;align-items:center}
+.status{display:inline-flex;align-items:center;gap:9px;font:500 13px var(--mono);padding:7px 14px;border-radius:99px;background:var(--surface);border:1px solid var(--rule);color:var(--muted);margin-bottom:26px}
+.status i{width:8px;height:8px;border-radius:50%;background:var(--ok);box-shadow:0 0 0 0 var(--ok);animation:pulse 2s infinite}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(74,222,128,.6)}70%{box-shadow:0 0 0 10px transparent}100%{box-shadow:0 0 0 0 transparent}}
+.hero h1{font-size:clamp(38px,5.6vw,72px);font-weight:800;line-height:.98;letter-spacing:-.045em;margin-bottom:26px;text-wrap:balance}
+.hero p.lead{font-size:clamp(17px,2vw,20px);color:var(--muted);max-width:56ch;margin:0 0 34px}
+.cta{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:34px}
+.socials{display:flex;gap:18px;font:500 13px var(--mono);color:var(--muted)}
+.socials a{text-decoration:none;border-bottom:1px solid var(--rule);padding-bottom:2px}
+.socials a:hover{color:var(--a);border-color:var(--a)}
+.portrait{position:relative;aspect-ratio:1/1.08;border-radius:28px;background:linear-gradient(150deg,var(--surface2),var(--surface));border:1px solid var(--rule);overflow:hidden;box-shadow:0 40px 80px -30px rgba(0,0,0,.6)}
+.portrait .mono-bg{position:absolute;inset:0;display:grid;place-items:center;font:800 clamp(120px,18vw,220px) var(--display);letter-spacing:-.06em;background:linear-gradient(160deg,var(--a),var(--a2) 60%,var(--a4));-webkit-background-clip:text;background-clip:text;color:transparent;opacity:.92}
+.portrait .float{position:absolute;z-index:2;background:var(--navbg);backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);border:1px solid var(--rule);border-radius:14px;padding:10px 14px;font-size:13px;box-shadow:0 12px 30px -10px rgba(0,0,0,.4);animation:bob 6s ease-in-out infinite}
+.float b{display:block;font:700 20px var(--display);color:var(--a)}
+.float.f1{left:-4%;bottom:14%}
+.float.f2{right:-3%;top:12%;animation-delay:-3s}
+.float.f3{right:8%;bottom:-3%;animation-delay:-1.5s}
+@keyframes bob{50%{transform:translateY(-10px)}}
 
-/* sections */
-section{padding-block:44px;border-top:1px solid var(--rule)}
-.sec-h{display:flex;flex-wrap:wrap;align-items:baseline;gap:6px 16px;margin-bottom:26px}
-.sec-h h2{font-family:var(--display);font-weight:700;font-size:clamp(25px,3.6vw,34px);letter-spacing:-.02em;line-height:1.1;margin:0;text-wrap:balance}
-.sec-h .mono{color:var(--muted);text-transform:uppercase}
-.case{display:grid;grid-template-columns:200px minmax(0,1fr);gap:8px 36px;padding-block:22px;border-top:1px dashed var(--rule)}
+/* MARQUEE */
+.marq{border-block:1px solid var(--rule);background:var(--bg2);overflow:hidden;padding:18px 0}
+.marq div{display:flex;gap:44px;width:max-content;animation:slide 38s linear infinite;font:500 15px var(--mono);color:var(--muted);white-space:nowrap}
+.marq span::after{content:"/";margin-left:44px;color:var(--a);opacity:.6}
+@keyframes slide{to{transform:translateX(-50%)}}
+
+/* SECTIONS */
+section{padding:110px 0}
+section.alt{background:var(--bg2);border-block:1px solid var(--rule)}
+.sh{max-width:760px;margin-bottom:56px}
+.sh h2{font-size:clamp(34px,5vw,58px);font-weight:800;letter-spacing:-.04em;margin-bottom:16px;text-wrap:balance}
+.sh p{color:var(--muted);font-size:18px;margin:0}
+
+/* BENTO */
+.bento{display:grid;grid-template-columns:repeat(12,1fr);gap:16px}
+.cell{background:var(--surface);border:1px solid var(--rule);border-radius:22px;padding:28px;position:relative;overflow:hidden;transition:transform .3s,border-color .3s}
+.cell:hover{border-color:color-mix(in srgb,var(--a) 50%,var(--rule));transform:translateY(-3px)}
+.c3{grid-column:span 3}.c4{grid-column:span 4}.c5{grid-column:span 5}.c6{grid-column:span 6}.c7{grid-column:span 7}.c8{grid-column:span 8}
+.big{font:800 clamp(44px,5.5vw,68px)/1 var(--display);letter-spacing:-.04em;font-variant-numeric:tabular-nums}
+.cell .lab{color:var(--muted);font-size:14.5px;margin-top:8px;line-height:1.4}
+.cell h3{font-size:22px;margin-bottom:10px}
+.cell p{color:var(--muted);margin:0 0 12px}
+.cell.glow::before{content:"";position:absolute;width:260px;height:260px;right:-80px;top:-80px;background:radial-gradient(circle,var(--glow),transparent 70%)}
+
+/* ABOUT */
+.about{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(0,.9fr);gap:56px;align-items:start}
+.about p{font-size:18.5px;color:var(--muted);margin:0 0 18px}
+.about p b{color:var(--fg);font-weight:500}
+.checks{list-style:none;margin:0;padding:0;display:grid;gap:12px}
+.checks li{display:flex;gap:14px;align-items:flex-start;background:var(--surface);border:1px solid var(--rule);padding:16px 18px;border-radius:14px;font-size:15.5px}
+.checks li::before{content:"";flex:0 0 22px;height:22px;border-radius:7px;background:var(--a);margin-top:2px;-webkit-mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat;mask:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24'%3E%3Cpath d='M20 6 9 17l-5-5' fill='none' stroke='black' stroke-width='3' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/70% no-repeat}
+
+/* CASE STUDIES */
+.case{display:grid;grid-template-columns:minmax(0,.42fr) minmax(0,.58fr);gap:48px;padding:56px 0;border-top:1px solid var(--rule)}
 .case:first-of-type{border-top:0;padding-top:0}
-.case .meta{font-family:var(--mono);font-size:12px;color:var(--muted);line-height:1.7}
-.case .meta b{display:block;color:var(--fg);font-weight:500}
-.case h3{font-family:var(--display);font-weight:700;font-size:21px;letter-spacing:-.01em;line-height:1.2;margin:0 0 8px;text-wrap:balance}
-.case p{margin:0 0 10px;max-width:68ch}
-.case ul{margin:10px 0 0;padding-left:18px;max-width:72ch}
-.case li{margin:0 0 7px;padding-left:2px}
-.case li::marker{color:var(--accent)}
-.stack{margin-top:12px;font-family:var(--mono);font-size:12px;color:var(--muted)}
-.stack b{color:var(--fg);font-weight:500}
+.case .num{font:800 clamp(60px,9vw,120px)/.9 var(--display);letter-spacing:-.06em;color:transparent;-webkit-text-stroke:1.5px var(--rule);margin-bottom:18px}
+.case .when{font:500 12.5px var(--mono);color:var(--a);letter-spacing:.1em;text-transform:uppercase}
+.case h3{font-size:clamp(26px,3.2vw,38px);margin:10px 0 14px;letter-spacing:-.035em}
+.case .desc{color:var(--muted);margin:0 0 18px}
+.pills{display:flex;flex-wrap:wrap;gap:7px}
+.pill{font:500 12px var(--mono);padding:5px 11px;border-radius:99px;background:var(--surface);border:1px solid var(--rule);color:var(--muted)}
+.pill.g{color:var(--a);border-color:color-mix(in srgb,var(--a) 40%,transparent);background:color-mix(in srgb,var(--a) 10%,transparent)}
+.pill.o{color:var(--a3);border-color:color-mix(in srgb,var(--a3) 40%,transparent);background:color-mix(in srgb,var(--a3) 10%,transparent)}
+.feat{display:grid;gap:12px}
+.feat div{background:var(--surface);border:1px solid var(--rule);border-radius:16px;padding:18px 20px}
+.feat b{display:block;font:700 16.5px var(--display);margin-bottom:4px;letter-spacing:-.01em}
+.feat span{color:var(--muted);font-size:15px;display:block}
+.flow{display:flex;gap:0;margin:0 0 6px;overflow-x:auto;padding-bottom:6px}
+.flow div{flex:1 0 118px;position:relative;padding:14px 12px;background:var(--surface);border:1px solid var(--rule);margin-left:-1px;font-size:13px;line-height:1.25;text-align:center}
+.flow div:first-child{border-radius:14px 0 0 14px;margin-left:0}
+.flow div:last-child{border-radius:0 14px 14px 0}
+.flow div::before{content:"";display:block;width:10px;height:10px;border-radius:50%;background:var(--ok);margin:0 auto 8px;box-shadow:0 0 0 4px color-mix(in srgb,var(--ok) 20%,transparent)}
+.flow-cap{font:500 12px var(--mono);color:var(--muted);margin-bottom:10px}
+.mini{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;margin-top:8px}
+.mini .cell{padding:24px}
+.mini ul{margin:10px 0 0;padding-left:18px;color:var(--muted);font-size:15px}
+.mini li{margin-bottom:6px}
+.mini li::marker{color:var(--a)}
 
-/* journey strip: the real stage state of the lead-to-booking flow */
-.journey{margin:16px 0 6px;border:1px solid var(--rule);border-radius:6px;background:var(--surface);overflow-x:auto}
-.journey ol{list-style:none;margin:0;padding:0;display:grid;grid-template-columns:repeat(8,minmax(104px,1fr));min-width:850px}
-.journey li{margin:0;padding:12px 12px 13px;border-right:1px solid var(--rule);font-size:13px;line-height:1.3}
-.journey li:last-child{border-right:0}
-.journey li b{display:block;font-weight:600;margin-bottom:7px}
-.pill{display:inline-block;font-family:var(--mono);font-size:10.5px;letter-spacing:.05em;text-transform:uppercase;padding:2px 7px;border-radius:3px}
-.pill.live{color:var(--live);background:var(--live-bg)}
-.pill.prog{color:var(--prog);background:var(--prog-bg)}
-.pill.next{color:var(--next);background:var(--next-bg)}
-.cap{font-family:var(--mono);font-size:11.5px;color:var(--muted);margin-bottom:6px}
+/* TEAM table */
+.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:18px;background:var(--surface)}
+table{border-collapse:collapse;width:100%;min-width:560px;font-size:15px}
+th{font:500 11.5px var(--mono);letter-spacing:.1em;text-transform:uppercase;text-align:left;color:var(--muted);background:var(--surface2);padding:13px 18px}
+td{padding:14px 18px;border-top:1px solid var(--rule);vertical-align:top;color:var(--muted)}
+td:first-child{color:var(--fg);font-weight:500}
 
-/* tables */
-.tw{overflow-x:auto;border:1px solid var(--rule);border-radius:6px;background:var(--surface);margin:14px 0}
-table{border-collapse:collapse;width:100%;min-width:560px;font-size:14px}
-th{font-family:var(--mono);font-weight:500;font-size:11.5px;letter-spacing:.06em;text-transform:uppercase;text-align:left;color:var(--muted);background:var(--tint);padding:9px 14px}
-td{padding:10px 14px;border-top:1px solid var(--rule);vertical-align:top}
-td:first-child{font-weight:500;width:30%}
+/* CHARTS */
+.chart{width:100%;height:auto;display:block}
+.chart text{font-family:var(--mono);font-size:11px;fill:var(--muted)}
+.chart .lbl{fill:var(--fg);font-family:var(--body);font-size:12.5px}
+.chart .val{fill:var(--fg);font-weight:500}
+.bg{fill:var(--grid)}
+.bar{transition:width 1.1s cubic-bezier(.2,.7,.2,1)}
+.charts{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}
+.charts .cell h3{font-size:19px}
+.charts .cell .sub{color:var(--muted);font-size:14px;margin:0 0 16px}
 
-.cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:28px}
-.cols h3{font-family:var(--display);font-size:18px;margin:0 0 8px}
-.cols ul{margin:0;padding-left:18px}
-.cols li{margin-bottom:6px}
-.cols li::marker{color:var(--accent)}
+/* SALESFORCE */
+.sf{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:16px}
+.prog{margin-top:14px}
+.prog .row{display:flex;justify-content:space-between;font-size:14.5px;margin-bottom:6px}
+.prog .row em{font-style:normal;font:500 12px var(--mono);color:var(--ok)}
+.track{height:8px;background:var(--grid);border-radius:99px;overflow:hidden;margin-bottom:16px}
+.track i{display:block;height:100%;width:0;background:linear-gradient(90deg,var(--a),var(--a2));border-radius:99px;transition:width 1.3s cubic-bezier(.2,.7,.2,1)}
+pre{margin:12px 0 0;padding:18px;border-radius:14px;background:var(--bg);border:1px solid var(--rule);overflow-x:auto;font:13px/1.6 var(--mono);color:var(--fg)}
+pre .k{color:var(--a4)}pre .s{color:var(--a3)}pre .c{color:var(--muted)}
 
-footer{padding-block:30px 48px;border-top:1px solid var(--rule);color:var(--muted);font-size:13.5px;display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
-.copy{font-family:var(--mono);font-size:12px;background:var(--surface);color:var(--fg);border:1px solid var(--rule);border-radius:4px;padding:3px 9px;cursor:pointer}
-.copy:hover{border-color:var(--accent);color:var(--accent)}
+/* PROJECTS */
+.projects{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.proj{background:var(--surface);border:1px solid var(--rule);border-radius:22px;padding:26px;display:flex;flex-direction:column;text-decoration:none;transition:transform .3s,border-color .3s}
+.proj:hover{transform:translateY(-5px);border-color:var(--a)}
+.proj .top{display:flex;justify-content:space-between;align-items:center;margin-bottom:46px}
+.proj .ic{width:46px;height:46px;border-radius:13px;display:grid;place-items:center;font:800 15px var(--display);color:var(--ink)}
+.proj .arr{font-size:20px;color:var(--muted);transition:.3s}
+.proj:hover .arr{color:var(--a);transform:translate(3px,-3px)}
+.proj h3{font-size:21px;margin-bottom:8px}
+.proj p{color:var(--muted);font-size:15px;margin:0 0 18px;flex:1}
 
-@media (max-width:820px){
-  .hero{grid-template-columns:1fr;gap:28px;padding-block:36px 28px}
-  .case{grid-template-columns:1fr;gap:6px}
-  .case .meta{display:flex;flex-wrap:wrap;gap:2px 14px}
-  .case .meta b{display:inline}
-  .cols{grid-template-columns:1fr}
+/* SKILLS */
+.skills{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.skills .cell h3{font-size:18px;margin-bottom:16px}
+
+/* TIMELINE */
+.tl{position:relative;max-width:820px;margin:0 auto}
+.tl::before{content:"";position:absolute;left:19px;top:8px;bottom:8px;width:2px;background:linear-gradient(var(--a),var(--rule))}
+.tl .it{position:relative;padding:0 0 36px 64px}
+.tl .it::before{content:"";position:absolute;left:10px;top:6px;width:20px;height:20px;border-radius:50%;background:var(--bg2);border:3px solid var(--a);box-shadow:0 0 0 6px var(--glow)}
+.tl .when{font:500 12.5px var(--mono);color:var(--a);letter-spacing:.06em}
+.tl h3{font-size:22px;margin:4px 0 6px}
+.tl p{margin:0;color:var(--muted)}
+
+/* CONTACT */
+.cta-box{text-align:center;padding:88px 28px;border-radius:32px;border:1px solid var(--rule);background:
+  radial-gradient(ellipse 60% 80% at 50% 0,var(--glow),transparent 70%),var(--surface);position:relative;overflow:hidden}
+.cta-box h2{font-size:clamp(36px,6vw,72px);font-weight:800;letter-spacing:-.045em;margin-bottom:18px;text-wrap:balance}
+.cta-box p{color:var(--muted);font-size:18px;max-width:52ch;margin:0 auto 32px}
+.cta-box .cta{justify-content:center;margin:0}
+footer{padding:36px 0 56px;color:var(--muted);font-size:14px}
+footer .wrap{display:flex;flex-wrap:wrap;gap:10px 28px;justify-content:space-between}
+
+
+
+/* PLATFORMS */
+.plat{padding:0;margin-top:-1px}
+.pgrid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:16px}
+.pc{background:var(--surface);border:1px solid var(--rule);border-radius:24px;padding:26px 24px;position:relative;overflow:hidden;display:flex;flex-direction:column;transition:transform .3s,border-color .3s}
+.pc:hover{transform:translateY(-5px);border-color:var(--a)}
+.pc.main{border-color:var(--a);background:linear-gradient(180deg,var(--glow),var(--surface) 55%)}
+.pc .lvl{align-self:flex-start;font:600 11px var(--mono);letter-spacing:.08em;text-transform:uppercase;padding:4px 10px;border-radius:99px;margin-bottom:18px}
+.lvl.exp{background:var(--a);color:var(--ink)}
+.lvl.trn{background:color-mix(in srgb,var(--a2) 18%,transparent);color:var(--a2);border:1px solid color-mix(in srgb,var(--a2) 50%,transparent)}
+.lvl.opn{background:transparent;color:var(--muted);border:1px dashed var(--rule)}
+.pc h3{font-size:30px;font-weight:800;letter-spacing:-.04em;margin-bottom:4px}
+.pc .tag{color:var(--muted);font-size:14px;margin:0 0 16px}
+.pc .proof{font:800 40px/1 var(--display);letter-spacing:-.04em;color:var(--a);margin-bottom:2px}
+.pc .proofl{font-size:13px;color:var(--muted);margin-bottom:16px}
+.pc ul{margin:0;padding:0;list-style:none;display:grid;gap:9px;font-size:14.5px;color:var(--muted);flex:1}
+.pc li{padding-left:18px;position:relative}
+.pc li::before{content:"";position:absolute;left:0;top:.62em;width:8px;height:2px;background:var(--a)}
+.pc li b{color:var(--fg);font-weight:500}
+.roles{margin-top:24px;display:flex;flex-wrap:wrap;gap:10px;align-items:center}
+.roles .rl{font:500 12px var(--mono);letter-spacing:.12em;text-transform:uppercase;color:var(--a);margin-right:6px}
+.roles span.r{font:500 14px var(--body);padding:8px 16px;border-radius:99px;background:var(--surface);border:1px solid var(--rule)}
+.core{margin-top:16px;display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px}
+.core div{background:var(--surface2);border:1px solid var(--rule);border-radius:16px;padding:16px;font-size:13.5px;line-height:1.35;color:var(--muted)}
+.core b{display:block;color:var(--fg);font:700 15px var(--display);margin-bottom:4px;letter-spacing:-.01em}
+.hplat{display:flex;flex-wrap:wrap;gap:10px;margin:0 0 30px}
+.hplat a{display:inline-flex;align-items:center;gap:9px;text-decoration:none;font:700 14.5px var(--display);padding:10px 16px;border-radius:12px;background:var(--surface);border:1px solid var(--rule);letter-spacing:-.01em;transition:.2s}
+.hplat a:hover{border-color:var(--a);transform:translateY(-2px)}
+.hplat a i{width:9px;height:9px;border-radius:50%;background:var(--a)}
+.hplat a.t i{background:var(--a2)}.hplat a.o i{background:transparent;border:2px solid var(--muted)}
+@media (max-width:980px){.pgrid{grid-template-columns:repeat(2,minmax(0,1fr))}.core{grid-template-columns:repeat(3,minmax(0,1fr))}}
+@media (max-width:560px){.pgrid{grid-template-columns:minmax(0,1fr)}.core{grid-template-columns:repeat(2,minmax(0,1fr))}}
+
+
+/* STEPS + FORM */
+.steps{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:0;position:relative}
+.st{padding:24px 22px 8px 0;position:relative}
+.st::before{content:"";position:absolute;top:44px;left:34px;right:0;height:2px;background:linear-gradient(90deg,var(--a),var(--rule))}
+.st:last-child::before{display:none}
+.st span{display:grid;place-items:center;width:38px;height:38px;border-radius:50%;background:var(--surface);border:2px solid var(--a);color:var(--a);font:700 13px var(--mono);position:relative;z-index:1;margin-bottom:18px}
+.st b{display:block;font:700 19px var(--display);letter-spacing:-.02em;margin-bottom:6px}
+.st p{margin:0;color:var(--muted);font-size:14.5px;line-height:1.5;padding-right:14px}
+.cform{margin-top:24px;display:grid;grid-template-columns:minmax(0,.8fr) minmax(0,1.2fr);gap:32px;text-align:left;align-items:start}
+.cform .ci h3{font-size:26px;margin-bottom:10px}
+.cform .ci p{color:var(--muted);margin:0 0 14px;font-size:16px}
+.cform .ci ul{list-style:none;margin:0;padding:0;display:grid;gap:10px;color:var(--muted);font-size:15px}
+.cform .ci li b{color:var(--fg);font-weight:500}
+form.f{background:var(--surface);border:1px solid var(--rule);border-radius:22px;padding:26px;display:grid;gap:14px}
+form.f .row{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+form.f label{display:grid;gap:6px;font:500 13px var(--mono);color:var(--muted);letter-spacing:.04em}
+form.f input,form.f textarea,form.f select{font:400 16px var(--body);background:var(--bg);color:var(--fg);border:1px solid var(--rule);border-radius:12px;padding:13px 14px;width:100%;min-width:0}
+form.f textarea{min-height:130px;resize:vertical}
+form.f input:focus,form.f textarea:focus,form.f select:focus{outline:2px solid var(--a);outline-offset:1px;border-color:var(--a)}
+form.f .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+form.f .msg{font:500 14px var(--body);min-height:20px}
+form.f .msg.ok{color:var(--ok)}form.f .msg.err{color:var(--a3)}
+form.f button.btn{justify-content:center;width:100%}
+@media (max-width:980px){.steps{grid-template-columns:minmax(0,1fr);gap:6px}.st{padding:8px 0 14px 54px}.st span{position:absolute;left:0;top:6px;margin:0}.st::before{top:50px;bottom:-10px;left:18px;right:auto;width:2px;height:auto;background:linear-gradient(var(--a),var(--rule))}.cform{grid-template-columns:minmax(0,1fr)}}
+@media (max-width:560px){form.f .row{grid-template-columns:minmax(0,1fr)}form.f{padding:20px}}
+
+/* LINKEDIN POST CARD */
+.li{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:32px;align-items:center;margin-bottom:16px}
+.post{background:var(--surface);border:1px solid var(--rule);border-radius:18px;overflow:hidden;max-width:540px;width:100%;margin:0 auto;box-shadow:0 30px 60px -30px rgba(0,0,0,.5)}
+.post .ph{display:flex;align-items:center;gap:12px;padding:16px 18px 10px}
+.post .logo-tp{width:48px;height:48px;border-radius:8px;background:#0b0705;border:1px solid var(--rule);display:grid;place-items:center;color:#e8742a;font:800 13px var(--display);letter-spacing:.02em;flex:none}
+.post .nm{font:600 15px var(--body);line-height:1.2}
+.post .nm small{display:block;font:400 12.5px var(--body);color:var(--muted)}
+.post .fol{margin-left:auto;font:600 13px var(--body);color:#0a66c2;text-decoration:none;white-space:nowrap}
+.post .cap{padding:0 18px 12px;font-size:14.5px;line-height:1.5;color:var(--fg)}
+.post .cap b{font-weight:600}
+.post .cap .more{color:var(--muted)}
+.car{position:relative;background:#000;aspect-ratio:1/1}
+.car img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;opacity:0;transition:opacity .4s}
+.car img.on{opacity:1}
+.car button{position:absolute;top:50%;transform:translateY(-50%);width:36px;height:36px;border-radius:50%;border:0;background:rgba(255,255,255,.9);color:#111;font-size:18px;cursor:pointer;box-shadow:0 2px 8px rgba(0,0,0,.4)}
+.car .pv{left:10px}.car .nx{right:10px}
+.car .cnt{position:absolute;right:12px;bottom:12px;background:rgba(0,0,0,.7);color:#fff;font:500 12px var(--mono);padding:3px 9px;border-radius:99px}
+.post .react{display:flex;justify-content:space-between;padding:10px 18px;color:var(--muted);font-size:13px;border-bottom:1px solid var(--rule)}
+.post .acts{display:flex;justify-content:space-around;padding:6px 8px}
+.post .acts span{font:500 13.5px var(--body);color:var(--muted);padding:8px 10px}
+.li h3{font-size:clamp(24px,3vw,34px);margin-bottom:12px;letter-spacing:-.03em}
+.li p{color:var(--muted);margin:0 0 14px}
+.inbtn{display:inline-flex;align-items:center;gap:10px;background:#0a66c2;color:#fff;text-decoration:none;font:600 14.5px var(--body);padding:12px 20px;border-radius:12px;margin-top:4px}
+.inbtn i{width:22px;height:22px;border-radius:4px;background:#fff;color:#0a66c2;display:grid;place-items:center;font:800 13px var(--body);font-style:normal}
+.inbtn:hover{filter:brightness(1.1)}
+.pimg{position:absolute;z-index:1;top:50%;left:50%;width:78%;aspect-ratio:1;height:auto;transform:translate(-50%,-50%);border-radius:50%;object-fit:cover;box-shadow:0 0 0 6px color-mix(in srgb,var(--a) 70%,transparent),0 30px 60px -20px rgba(0,0,0,.6)}
+@media (max-width:980px){.li{grid-template-columns:minmax(0,1fr)}}
+
+/* REVEAL */
+.rv{opacity:0;transform:translateY(28px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+.d1{transition-delay:.08s}.d2{transition-delay:.16s}.d3{transition-delay:.24s}
+
+@media (max-width:1240px){.links a{padding:7px 7px;font-size:13px}.nav-r .btn{padding:10px 16px}}
+@media (max-width:1100px){.links a{padding:6px 5px;font-size:12.5px}}
+@media (max-width:980px){
+  .links{display:none}
+  .links.open{display:flex;position:absolute;top:64px;left:0;right:0;flex-direction:column;align-items:stretch;background:var(--bg);border-bottom:1px solid var(--rule);padding:12px 20px 18px}
+  .menu{display:grid}
+  .hero .wrap,.about,.case,.sf{grid-template-columns:minmax(0,1fr)}
+  .hero{padding-top:120px}
+  .portrait{max-width:380px;margin-top:10px}
+  .c3,.c4,.c5,.c6,.c7,.c8{grid-column:span 6}
+  .projects,.skills{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .charts,.mini{grid-template-columns:minmax(0,1fr)}
+  section{padding:80px 0}
 }
-@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+@media (max-width:560px){
+  .c3,.c4,.c5,.c6,.c7,.c8{grid-column:span 12}
+  .projects,.skills{grid-template-columns:minmax(0,1fr)}
+  .float.f1{left:2%}.float.f2{right:2%}
+  .nav-r .btn{display:none}
+}
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}*{animation:none!important;transition:none!important}.rv{opacity:1;transform:none}
+}
 </style>
+</head>
+<body>
 
-<div class="wrap">
-  <header class="bar">
-    <b>Prajwal Ramachandra</b>
-    <nav aria-label="Sections">
-      <a href="#work">Work</a><a href="#tellco">Tellco</a><a href="#team">Team</a><a href="#sops">SOPs</a><a href="#more">Background</a>
-    </nav>
-  </header>
-
-  <div class="hero">
-    <div>
-      <h1>Zoho CRM and Creator, built to <em>run a business</em>.</h1>
-      <p>I design, build and lead Zoho systems that join sales, operations and finance into one working flow. About four years hands-on across CRM, Creator, Flow, Analytics, Desk, Campaigns and SalesIQ, mostly at Chartwell Private Hospital, with earlier rollouts at Tellco Europe and Quantix Capital.</p>
-      <div class="contact">
-        <span id="mail">prajwalsemailid@gmail.com</span>
-        <button class="copy" id="copyMail" type="button">Copy</button>
-        <a href="https://www.linkedin.com/in/prajwal10" target="_blank" rel="noopener">LinkedIn</a>
-        <a href="https://github.com/Prajugowda10" target="_blank" rel="noopener">GitHub</a>
-      </div>
+<nav class="nav" aria-label="Main">
+  <div class="wrap">
+    <a class="logo" href="#top"><i><img src="img/prajwal-sm.png" alt="" onerror="this.remove()"></i>Prajwal</a>
+    <div class="links" id="links">
+      <a href="#platforms">CRM Platforms</a><a href="#about">About</a><a href="#work">Work</a><a href="#numbers">Numbers</a><a href="#salesforce">Salesforce</a><a href="#techipulse">TechiPulse</a><a href="#projects">Projects</a><a href="#research">Dissertation</a><a href="#skills">Skills</a><a href="#journey">Journey</a>
     </div>
-    <div class="stats" aria-label="Headline numbers">
-      <div class="stat"><b>~4 yrs</b><span>hands-on Zoho CRM and Creator</span></div>
-      <div class="stat"><b>400+</b><span>staff on the employee app I built</span></div>
-      <div class="stat"><b>35+</b><span>event-driven workflows live</span></div>
-      <div class="stat"><b>12</b><span>phases delivered: Creator to CRM</span></div>
+    <div class="nav-r">
+      <button class="iconbtn" id="theme" type="button" aria-label="Toggle light and dark theme">◐</button>
+      <a class="btn p" href="#contact">Hire me</a>
+      <button class="iconbtn menu" id="menu" type="button" aria-label="Open menu">☰</button>
     </div>
   </div>
+</nav>
 
-  <section id="work">
-    <div class="sec-h"><h2>Selected work</h2><span class="mono">Chartwell Private Hospital, 2026</span></div>
+<header class="hero" id="top">
+  <div class="wrap">
+    <div>
+      <div class="status"><i></i>Open to CRM developer and consultant roles · UK and remote</div>
+      <h1>CRM developer for <span class="grad">Zoho, Salesforce, HubSpot and Dynamics 365</span>.</h1>
+      <p class="lead">I design, build and lead CRM systems that join sales, operations and finance into one working flow. Four years in production on Zoho, Salesforce trained, and ready to take on HubSpot and Microsoft Dynamics 365 roles.</p>
+      <div class="hplat"><a href="#platforms"><i></i>Zoho · 4+ yrs</a><a class="t" href="#platforms"><i></i>Salesforce</a><a class="o" href="#platforms"><i></i>HubSpot</a><a class="o" href="#platforms"><i></i>Dynamics 365</a></div>
+      <div class="cta">
+        <a class="btn p" href="#work">See my work →</a>
+        <a class="btn" href="Prajwal_Ramachandra_CV.pdf" download>Download CV ↓</a>
+        <a class="btn" href="#contact">Contact me</a>
+      </div>
+      <div class="socials">
+        <a href="https://www.linkedin.com/in/prajwal10" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/Prajugowda10" target="_blank" rel="noopener">GitHub</a>
+        <span>Leicester, UK</span>
+      </div>
+    </div>
+    <div class="portrait">
+      <div class="mono-bg" aria-hidden="true">PR</div>
+      <img class="pimg" src="img/prajwal.png" alt="Prajwal Ramachandra" onerror="this.remove()">
+      <div class="float f1"><b>400+</b>staff on my app</div>
+      <div class="float f2"><b>35+</b>live workflows</div>
+      <div class="float f3"><b>12</b>phases shipped</div>
+    </div>
+  </div>
+</header>
 
-    <article class="case">
-      <div class="meta"><b>Flagship</b>Oct 2026 to now<br>Lead developer and project owner</div>
+<div class="marq" aria-hidden="true"><div>
+  <span>Zoho CRM</span><span>Zoho Creator</span><span>Deluge</span><span>Salesforce</span><span>Apex</span><span>Python</span><span>Machine Learning</span><span>Streamlit</span><span>React</span><span>JavaScript</span><span>AWS</span><span>Xero</span><span>Twilio</span><span>CloudTalk</span><span>Cloudflare</span><span>Next.js</span><span>Google Ads</span><span>SalesIQ</span><span>Zapier</span><span>Shopify</span>
+  <span>Zoho CRM</span><span>Zoho Creator</span><span>Deluge</span><span>Salesforce</span><span>Apex</span><span>Python</span><span>Machine Learning</span><span>Streamlit</span><span>React</span><span>JavaScript</span><span>AWS</span><span>Xero</span><span>Twilio</span><span>CloudTalk</span><span>Cloudflare</span><span>Next.js</span><span>Google Ads</span><span>SalesIQ</span><span>Zapier</span><span>Shopify</span>
+</div></div>
+
+<main>
+<!-- PLATFORMS -->
+<section id="platforms" class="plat" style="padding:90px 0 20px">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">CRM platforms</div><h2>One developer, every major CRM.</h2><p>The patterns are the same everywhere: data model, automation, integrations, reporting and adoption. I have shipped them on Zoho and I move them across platforms.</p></div>
+    <div class="pgrid">
+      <div class="pc main rv">
+        <span class="lvl exp">Production expert</span>
+        <h3>Zoho</h3><p class="tag">CRM, Creator, Flow, Analytics, Desk, SalesIQ</p>
+        <div class="proof">4+ yrs</div><div class="proofl">in live production, 400+ staff on one app</div>
+        <ul><li><b>Deluge</b> functions, REST APIs and widgets</li><li><b>35+</b> automations, <b>10+</b> dashboards</li><li>Full CRM migration, <b>12 phases</b> delivered</li><li>Led a team of four developers</li></ul>
+      </div>
+      <div class="pc rv d1">
+        <span class="lvl trn">Trained and building</span>
+        <h3>Salesforce</h3><p class="tag">Admin and Platform Developer topics</p>
+        <div class="proof">Apex</div><div class="proofl">Flow, SOQL, Lightning Web Components</div>
+        <ul><li>Data model, security and sharing completed</li><li><b>Deluge to Apex</b>, Zoho Flow to Salesforce Flow</li><li>Widgets to <b>LWC</b>, COQL to <b>SOQL</b></li><li>Trailhead developer org</li></ul>
+      </div>
+      <div class="pc rv d2">
+        <span class="lvl opn">Open to roles</span>
+        <h3>HubSpot</h3><p class="tag">CRM, Operations Hub, workflows</p>
+        <div class="proof">Ready</div><div class="proofl">same patterns, new platform</div>
+        <ul><li>Workflows from my <b>35+ Zoho automations</b></li><li>Custom objects from custom modules</li><li>APIs, webhooks and custom code actions</li><li>Lead capture, attribution, scoring, dashboards</li></ul>
+      </div>
+      <div class="pc rv d3">
+        <span class="lvl opn">Open to roles</span>
+        <h3>Dynamics 365</h3><p class="tag">Dataverse, Power Platform, Power Automate</p>
+        <div class="proof">Ready</div><div class="proofl">Creator maps directly to Power Apps</div>
+        <ul><li><b>Creator apps</b> to Power Apps and Dataverse</li><li>Zoho Flow to <b>Power Automate</b></li><li>Analytics to Power BI</li><li>Integrations and data migration</li></ul>
+      </div>
+    </div>
+    <div class="roles rv"><span class="rl">Roles I'm after</span><span class="r">CRM Developer</span><span class="r">Salesforce Developer</span><span class="r">Zoho Developer</span><span class="r">HubSpot Developer</span><span class="r">Dynamics 365 Consultant</span><span class="r">CRM Implementation Consultant</span><span class="r">CRM Business Analyst</span></div>
+    <div class="core rv">
+      <div><b>Data model</b>objects, fields, layouts</div><div><b>Automation</b>flows, triggers, approvals</div><div><b>Integrations</b>REST, webhooks, payments</div><div><b>Reporting</b>dashboards and KPIs</div><div><b>Migration</b>phased, tested, documented</div><div><b>Adoption</b>SOPs, training, handover</div>
+    </div>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">About</div><h2>Requirements in, working systems out.</h2></div>
+    <div class="about">
+      <div class="rv">
+        <p>At <b>a UK private hospital group</b> I lead the move of booking, diary and invoicing from Creator into Zoho CRM, run the Zoho team, and keep a live system working while it changes.</p>
+        <p>Before that I rolled out <b>Zoho One at Tellco Europe</b>, supported AWS production, and built internal apps at Quantix Capital. I have since covered the <b>Salesforce</b> Administrator and Platform Developer I topics, and I build AI and data projects on the side.</p>
+        <p>I hold an <b>MSc in Cloud Computing (Distinction)</b> and AWS Solutions Architect Associate.</p>
+      </div>
+      <ul class="checks rv d1">
+        <li>Turn messy requirements from non-technical teams into documented, working systems.</li>
+        <li>Connect platforms: CRM, Creator, Xero, Google Ads, Twilio, Shopify, WhatsApp.</li>
+        <li>Fix live problems with evidence: COQL queries, logs, and a dry run before every release.</li>
+        <li>Write the SOP and handover so the system outlives me.</li>
+      </ul>
+    </div>
+    <div class="bento" style="margin-top:56px">
+      <div class="cell c3 rv"><div class="big" data-n="4" data-s="+">0</div><div class="lab">years hands-on with Zoho CRM, Creator and Flow</div></div>
+      <div class="cell c3 rv d1"><div class="big" data-n="400" data-s="+">0</div><div class="lab">staff using the employee app I built alone</div></div>
+      <div class="cell c3 rv d2"><div class="big" data-n="35" data-s="+">0</div><div class="lab">event-driven workflows live in production</div></div>
+      <div class="cell c3 rv d3"><div class="big" data-n="150" data-s="+">0</div><div class="lab">CRM tasks delivered across 12 modules</div></div>
+    </div>
+  </div>
+</section>
+
+<!-- WORK -->
+<section id="work" class="alt">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">Selected work</div><h2>Systems in production, with the numbers.</h2><p>UK private hospital group, 2026. Client-internal, so patient data and identifiers are left out.</p></div>
+
+    <article class="case rv">
       <div>
-        <h3>Delivered booking, diary and invoicing migration into Zoho CRM</h3>
-        <p>Operations ran in Creator and sales in CRM, joined only at the patient. I connected them into one CRM-led journey and completed all 12 phases (69 subtasks), including quote on lead, invoicing, payments and Xero, while keeping the live system running.</p>
-        <div class="cap">Lead-to-booking flow, as of early November 2026</div>
-        <div class="journey"><ol>
-          <li><b>Enquiry</b><span class="pill live">Completed</span></li>
-          <li><b>Quote on lead</b><span class="pill live">Completed</span></li>
-          <li><b>Slot</b><span class="pill live">Completed</span></li>
-          <li><b>Convert</b><span class="pill live">Completed</span></li>
-          <li><b>Booking in Creator</b><span class="pill live">Completed</span></li>
-          <li><b>Diary in CRM</b><span class="pill live">Completed</span></li>
-          <li><b>Invoice</b><span class="pill live">Completed</span></li>
-          <li><b>Payment and Xero</b><span class="pill live">Completed</span></li>
-        </ol></div>
-        <ul>
-          <li><b>Master data:</b> 3 locations, 12 rooms, availability, maintenance blocks, companies, insurers and GPs. The scan catalogue went from 287 partial rows to 379 complete scan types, synced from Creator on a schedule.</li>
-          <li><b>Lead Canvas:</b> a custom sales screen, 26 new fields over 6 tabs. End time, duration and total price fill themselves from the catalogue for every lead source.</li>
-          <li><b>Convert button:</b> creates the patient and appointment in CRM, builds the booking in Creator and opens a prefilled invoice form in about 8 seconds. It reuses an appointment inside 45 days instead of duplicating it.</li>
-          <li><b>Diary sync and widget:</b> about 190 appointments synced, correct across BST and GMT, shown in a week-view diary with room filters, colour-coded status and a booking-card popup.</li>
-          <li><b>Data repair:</b> 301-row sync with zero write failures, 184 appointment-to-patient links backfilled, 128 malformed phone numbers repaired, and an hourly job keeping clinic status and invoice status current.</li>
-          <li><b>Gap analysis:</b> all 22 sections of the hospital SOP mapped against the CRM, used as a delivery checklist to complete the remaining build work and resolve management decisions.</li>
-        </ul>
-        <div class="stack"><b>Built with</b> Zoho CRM Enterprise, Creator, Flow, Deluge, COQL, REST APIs, widget SDK, Python</div>
+        <div class="num">01</div>
+        <div class="when">Oct 2026 to now · Lead developer and owner</div>
+        <h3>Booking, diary and invoicing migration into Zoho CRM</h3>
+        <p class="desc">Operations ran in Creator and sales in CRM, joined only at the patient. I connected them into one CRM-led journey and completed all 12 phases (69 subtasks) while the live system kept running.</p>
+        <div class="pills"><span class="pill g">12 phases done</span><span class="pill">Zoho CRM</span><span class="pill">Creator</span><span class="pill">Flow</span><span class="pill">Deluge</span><span class="pill">COQL</span><span class="pill">Widget SDK</span><span class="pill">Python</span></div>
+      </div>
+      <div>
+        <div class="flow-cap">LEAD-TO-BOOKING FLOW · ALL STAGES COMPLETE</div>
+        <div class="flow"><div>Enquiry</div><div>Quote on lead</div><div>Slot</div><div>Convert</div><div>Booking in Creator</div><div>Diary in CRM</div><div>Invoice</div><div>Payment and Xero</div></div>
+        <div class="feat" style="margin-top:14px">
+          <div><b>Master data and catalogue</b><span>3 locations, 12 rooms, companies, insurers, GPs. Scan catalogue grew from 287 partial rows to 379 complete scan types, synced on a schedule.</span></div>
+          <div><b>Lead Canvas</b><span>A custom sales screen with 26 new fields over 6 tabs. End time, duration and price fill from the catalogue.</span></div>
+          <div><b>Convert button</b><span>Creates the patient and appointment, builds the Creator booking and opens a prefilled invoice in about 8 seconds. Reuses an appointment inside 45 days.</span></div>
+          <div><b>Diary sync and widget</b><span>About 190 appointments, correct across BST and GMT, with a week view, room filters and booking-card popup.</span></div>
+          <div><b>Data repair</b><span>301-row sync with zero write failures, 184 patient links backfilled, 128 malformed phone numbers fixed.</span></div>
+        </div>
       </div>
     </article>
 
-    <article class="case">
-      <div class="meta"><b>Employee app</b>Mar 2026 to now<br>Sole developer</div>
+    <article class="case rv">
       <div>
-        <h3>Rota, timesheets, leave and kiosk for 400+ staff</h3>
-        <p>A Creator application with embedded widgets across three sites. It replaced spreadsheet administration and cut manual work by about 40%. Now on build 60 after steady feedback from managers and HR.</p>
-        <ul>
-          <li>Tablet <b>kiosk clock-in</b> with PIN, validation, and automatic closing of forgotten shifts.</li>
-          <li><b>Rota:</b> weekly view, split shifts, copy and paste, bank-holiday markers, and a Publish button that emails each person their own two weeks.</li>
-          <li><b>Payroll hours:</b> location-aware break rules, approve actual or rota hours, 1.5x for bank-holiday work, CSV exports.</li>
-          <li><b>Reports:</b> hours, monthly approved, and contracted vs timesheet hours showing overtime and shortfall per person.</li>
-          <li><b>Alerts:</b> late clock-ins notify the employee and manager by email and SMS, escalating on repeats, plus a nightly head-office summary.</li>
-        </ul>
-        <div class="stack"><b>Built with</b> Zoho Creator, Deluge, JavaScript widgets, Twilio, scheduled functions</div>
+        <div class="num">02</div>
+        <div class="when">Mar 2026 to now · Sole developer</div>
+        <h3>Employee app: rota, timesheets, leave and kiosk</h3>
+        <p class="desc">A Creator application with embedded widgets across three sites. It replaced spreadsheet administration and cut manual work by about 40%. Now on build 60.</p>
+        <div class="pills"><span class="pill g">400+ staff</span><span class="pill">Creator</span><span class="pill">Deluge</span><span class="pill">JS widgets</span><span class="pill">Twilio</span></div>
+      </div>
+      <div class="feat">
+        <div><b>Kiosk clock-in</b><span>Tablet clock-in with PIN and validation; forgotten shifts close automatically.</span></div>
+        <div><b>Rota</b><span>Weekly view, split shifts, copy and paste, bank-holiday markers. Publish emails each person their next two weeks.</span></div>
+        <div><b>Payroll hours</b><span>Location-aware break rules, approve actual or rota hours, 1.5x for bank holidays, CSV exports.</span></div>
+        <div><b>Reports and alerts</b><span>Contracted vs timesheet hours with overtime and shortfall. Late clock-ins alert employee and manager by email and SMS, escalating on repeats.</span></div>
       </div>
     </article>
 
-    <article class="case">
-      <div class="meta"><b>Attribution</b>2026<br>Designed and fixed end to end</div>
+    <article class="case rv">
       <div>
+        <div class="num">03</div>
+        <div class="when">2026 · Designed and fixed end to end</div>
         <h3>Google Ads to CRM conversion tracking</h3>
-        <p>Paid leads were booked without the click ID reaching the paid invoice, so Google could not see which ads produced revenue. I traced the causes with COQL and rebuilt the path from click to Closed Won.</p>
-        <ul>
-          <li>Captured <b>GCLID, WBRAID, GBRAID and UTM</b> values from the website, forms, chat and DM channels into CRM fields.</li>
-          <li>Built <b>invoiceToDeal</b>: when a direct booking is paid it finds the person, attaches or creates the deal, writes attribution first, then closes it as won. It fixed 9 stuck paid deals.</li>
-          <li>Compared three conversion routes and proved Google's scheduled import works (188 conversions in 30 days) while a Zoho-side push was dead. Recommended switching the dead route off.</li>
-        </ul>
+        <p class="desc">Paid leads were booked, but Google could not see which ads earned revenue. I traced the causes with COQL and rebuilt the path from click to Closed Won.</p>
+        <div class="pills"><span class="pill g">9 stuck deals fixed</span><span class="pill">GCLID</span><span class="pill">WBRAID</span><span class="pill">GBRAID</span><span class="pill">UTM</span><span class="pill">COQL</span></div>
+      </div>
+      <div class="feat">
+        <div><b>Capture everywhere</b><span>Click IDs and UTM values flow from the website, forms, chat and DMs into CRM fields.</span></div>
+        <div><b>invoiceToDeal</b><span>When a booking is paid it finds the person, attaches or creates the deal, writes attribution first, then closes it won.</span></div>
+        <div><b>Evidence-led decision</b><span>Compared three conversion routes. Google's scheduled import works (188 conversions in 30 days) while the Zoho push was dead, so I recommended switching it off.</span></div>
       </div>
     </article>
 
-    <article class="case">
-      <div class="meta"><b>Lead operations</b>2026<br>Live in production</div>
+    <article class="case rv">
       <div>
-        <h3>Duplicate prevention, chat bots, finance and reporting</h3>
-        <ul>
-          <li><b>Lead dedupe:</b> one chat created two leads (WhatsApp and web). A function keeps the first channel and removes the second, proven in both directions.</li>
-          <li><b>Self-referral flow:</b> an existing patient gets a note, a new person gets a lead. Also ResponseiQ call leads, ManyChat DM capture, postcode lookup and a blank lead-source rule.</li>
-          <li><b>SalesIQ bots:</b> new vs returning visitors, six proactive triggers, lead scoring, an FAQ bot with human escalation and a sensitive-topic guardrail.</li>
-          <li><b>Finance:</b> Xero invoice push, payment-status write-back, void rules, company package mapping, hardened confirmation emails, review-link tracking over SMS.</li>
-          <li><b>Reporting:</b> 10+ dashboards, patient-feedback analytics by site and month, catchment revenue maps by town.</li>
-        </ul>
+        <div class="num">04</div>
+        <div class="when">2026 · Planned and implemented</div>
+        <h3>CloudTalk phone system, inbound and outbound</h3>
+        <p class="desc">I planned and rolled out CloudTalk as the company's cloud phone system. About 20 people use it every day for inbound and outbound calling, and it is working well.</p>
+        <div class="pills"><span class="pill g">~20 daily users</span><span class="pill">CloudTalk</span><span class="pill">Zoho CRM</span><span class="pill">Call analytics</span></div>
+      </div>
+      <div class="feat">
+        <div><b>Planned end to end</b><span>Gathered what the sales and booking teams needed, designed the call flows, set up users and rolled it out to the team.</span></div>
+        <div><b>Inbound and outbound</b><span>Inbound routing and outbound calling both live, used by about 20 staff.</span></div>
+        <div><b>Connected to the CRM</b><span>Calls land in the CRM Calls module so telesales can follow up, and feed the call analytics dashboards.</span></div>
+        <div><b>Documented</b><span>Procedure documentation and training so new staff can start using it without me.</span></div>
       </div>
     </article>
-  </section>
 
-  <section id="tellco">
-    <div class="sec-h"><h2>Tellco Europe</h2><span class="mono">Zoho One rollout and e-commerce automation, 2025</span></div>
-    <article class="case">
-      <div class="meta"><b>CRM rollout</b>Jul 2024 to Feb 2026<br>Implementation lead and administrator</div>
+    <article class="case rv">
       <div>
-        <h3>Zoho One CRM for an energy-solutions group</h3>
-        <p>A phased rollout for a UK group with several business units: one login, executive dashboards, and a separate organisation for each unit, introduced one at a time over 12 to 16 weeks.</p>
-        <ul>
-          <li><b>Process:</b> designed the lead to delivery lifecycle (lead, qualify, proposal, closed won, production, delivered), so production sees an order the moment a deal closes.</li>
-          <li><b>Dashboards:</b> pipeline value, lead and opportunity counts, rep performance, expected closes, orders in production or delivered.</li>
-          <li><b>Setup:</b> fields, layouts, users, roles, profiles and an access-control matrix; Zoho linked to Zapier and an AI assistant.</li>
-          <li><b>Adoption:</b> a governance plan with a weekly 60-minute review, named owners and a three-month roadmap; 2-week and 4-week role-based training plans including Zia AI.</li>
-          <li><b>Handover:</b> tested each change and documented it for the IT manager.</li>
-        </ul>
-        <div class="stack"><b>Built with</b> Zoho One, CRM, Zia, Zapier, SalesIQ</div>
+        <div class="num">05</div>
+        <div class="when">2026 · Finishing this week · Lead developer</div>
+        <h3>Diagnostic imaging website and online booking engine</h3>
+        <p class="desc">I am building the full booking path for a diagnostic imaging website: a Cloudflare Worker API that holds a scan slot, takes payment and writes the booking into Zoho. It is in its final stage and goes live this week.</p>
+        <div class="pills"><span class="pill o">Final stage</span><span class="pill g">11 / 11 tests passing</span><span class="pill">Cloudflare Workers</span><span class="pill">Next.js</span><span class="pill">WordPress</span><span class="pill">Zoho CRM</span><span class="pill">Creator</span></div>
+      </div>
+      <div class="feat">
+        <div><b>Slot holds that cannot double-book</b><span>Atomic 20-minute holds, room-aware, one hold per visitor, with a 12-minute payment window inside it. A second patient who tries the same slot is blocked.</span></div>
+        <div><b>Checkout and fulfilment</b><span>Server-side pricing across scan, body parts and add-ons. A payment webhook, safe to receive twice, creates the Creator patient, a confirmed appointment and the CRM deal. Paid-but-slot-lost bookings go down a refund path.</span></div>
+        <div><b>Abandoned-checkout leads</b><span>When a hold expires unpaid, the clinical patient list stays clean while the CRM gets an Abandoned Checkout lead with scan, slot and UTM or GCLID attribution, ready for follow-up offers.</span></div>
+        <div><b>Built to switch systems</b><span>A single config switch points the diary at Creator today and at Zoho CRM after migration, with no API or frontend change.</span></div>
+        <div><b>Correct and safe</b><span>UK summer and winter time handled, closed days excluded, and a guard that blocks live Zoho URLs from staging. WordPress drives content and SEO pages; architecture documented with three diagrams and a plan.</span></div>
       </div>
     </article>
-    <article class="case">
-      <div class="meta"><b>E-commerce</b>2025</div>
-      <div>
-        <h3>Shopify and email automation</h3>
-        <ul>
-          <li>Designed the flows for a product launch: welcome, abandoned checkout and cart, browse abandonment, post-purchase, re-engagement.</li>
-          <li>Wrote an 84-point Klaviyo test plan, compared Klaviyo with Mailchimp and with Recart and Rebuy, audited the store and set up SalesIQ chat.</li>
-          <li>Prepared lead lists (Apollo, SendPulse, Python filtering), set up Clockify time tracking, and contributed to an AI tools evaluation and roadmap.</li>
-          <li>Synced Shopify with the business platform, saving about 8 hours of manual entry a week.</li>
-        </ul>
-        <div class="stack"><b>Built with</b> Shopify, Klaviyo, Zapier, Apollo, SendPulse, Clockify, Python</div>
-      </div>
-    </article>
-  </section>
 
-  <section id="team">
-    <div class="sec-h"><h2>Leading the Zoho team</h2><span class="mono">Chartwell, overall lead for CRM and systems</span></div>
-    <p style="max-width:70ch;margin:0 0 6px">I assigned each Zoho module to a named developer, tracked status and set measurable expectations. I kept the core CRM, Creator, Flow, SalesIQ and Analytics work myself.</p>
-    <div class="tw"><table>
-      <thead><tr><th>Area</th><th>Owner</th><th>What I set up</th></tr></thead>
-      <tbody>
-        <tr><td>CRM, Creator, Flow</td><td>Me (Developer 1 onboarding in July)</td><td>Replication, automation, lead-source fixes, live app support</td></tr>
-        <tr><td>SalesIQ, Analytics, Command Center</td><td>Me</td><td>Chat and WhatsApp lead capture, dashboards, journey orchestration</td></tr>
-        <tr><td>Desk, Recruit</td><td>Developer 2</td><td>Support ticketing build with a requirements document</td></tr>
-        <tr><td>Social, Marketing Automation</td><td>Developer 3</td><td>Posting plan, lead-nurture journeys and scoring</td></tr>
-        <tr><td>Campaigns, Survey</td><td>Developer 4</td><td>Email marketing and feedback surveys</td></tr>
-      </tbody>
-    </table></div>
-    <div class="cols" style="margin-top:22px">
-      <div>
-        <h3>Master plan</h3>
-        <p style="margin:0 0 8px">Completed about 150 tasks across 12 modules, each with its business reason and all marked Done. Deliverables include:</p>
-        <ul>
-          <li>Invoice-to-deal amount engine and the appointment join key between CRM and Creator</li>
-          <li>Automatic deal stage advance and accurate Google Ads won values</li>
-          <li>Lead-convert crash fix and ResponseiQ fix</li>
-          <li>Owner assignment rules, duplicate and test-record cleanup, workflow review</li>
-          <li>Auto-created deals for direct website bookings</li>
-          <li>Social unified inbox, Campaigns-to-CRM lists, SPF, DKIM and DMARC with a shared mailbox sending from CRM</li>
-        </ul>
+    <div class="cell rv" style="margin:0 0 16px">
+      <h3 style="font-size:20px;margin-bottom:6px">Booking engine architecture</h3>
+      <p style="color:var(--muted);margin:0 0 14px;font-size:14.5px">How a visitor's booking moves through the system. Names are generic; the real systems are client-internal.</p>
+      <svg class="chart" id="arch" viewBox="0 0 960 400" role="img" aria-label="Booking engine architecture: website, booking API, diary, payment provider, CRM">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0 0 10 5 0 10z" fill="var(--a)"/></marker></defs>
+        <g font-family="IBM Plex Sans,sans-serif" font-size="14">
+          <rect x="10" y="150" width="150" height="70" rx="14" fill="var(--surface2)" stroke="var(--rule)"/><text x="85" y="182" text-anchor="middle" fill="var(--fg)" font-weight="600">Visitor</text><text x="85" y="202" text-anchor="middle" fill="var(--muted)" font-size="12">picks scan and slot</text>
+          <rect x="210" y="130" width="170" height="110" rx="14" fill="var(--surface2)" stroke="var(--rule)"/><text x="295" y="165" text-anchor="middle" fill="var(--fg)" font-weight="600">Website</text><text x="295" y="187" text-anchor="middle" fill="var(--muted)" font-size="12">Next.js front end</text><text x="295" y="206" text-anchor="middle" fill="var(--muted)" font-size="12">WordPress content, SEO</text>
+          <rect x="430" y="110" width="190" height="150" rx="14" fill="var(--glow)" stroke="var(--a)" stroke-width="1.5"/><text x="525" y="148" text-anchor="middle" fill="var(--a)" font-weight="700" font-size="15">Booking API</text><text x="525" y="172" text-anchor="middle" fill="var(--fg)" font-size="12.5">Cloudflare Worker</text><text x="525" y="192" text-anchor="middle" fill="var(--muted)" font-size="12">slot holds, pricing</text><text x="525" y="210" text-anchor="middle" fill="var(--muted)" font-size="12">webhook handler</text><text x="525" y="228" text-anchor="middle" fill="var(--muted)" font-size="12">diary switch</text>
+          <rect x="690" y="20" width="250" height="80" rx="14" fill="var(--surface2)" stroke="var(--rule)"/><text x="815" y="53" text-anchor="middle" fill="var(--fg)" font-weight="600">Diary and patients</text><text x="815" y="75" text-anchor="middle" fill="var(--muted)" font-size="12">low-code app now, CRM after migration</text>
+          <rect x="690" y="160" width="250" height="80" rx="14" fill="var(--surface2)" stroke="var(--rule)"/><text x="815" y="193" text-anchor="middle" fill="var(--fg)" font-weight="600">Payment provider</text><text x="815" y="215" text-anchor="middle" fill="var(--muted)" font-size="12">checkout and webhook</text>
+          <rect x="690" y="300" width="250" height="80" rx="14" fill="var(--surface2)" stroke="var(--rule)"/><text x="815" y="333" text-anchor="middle" fill="var(--fg)" font-weight="600">CRM</text><text x="815" y="355" text-anchor="middle" fill="var(--muted)" font-size="12">deal, or abandoned-checkout lead</text>
+        </g>
+        <g stroke="var(--a)" stroke-width="2" fill="none" marker-end="url(#ah)">
+          <path d="M160 185 H208"/><path d="M380 185 H428"/><path d="M620 150 L688 70"/><path d="M620 200 H688"/><path d="M620 245 L688 335"/>
+        </g>
+        <g font-family="IBM Plex Mono,monospace" font-size="11" fill="var(--muted)">
+          <text x="640" y="96" transform="rotate(-36 640 96)">hold, confirm</text><text x="632" y="192">pay</text><text x="634" y="300" transform="rotate(34 634 300)">paid or expired</text>
+        </g>
+      </svg>
+      <div class="legend" style="margin-top:12px"><span><i style="background:var(--a)"></i>Paid: patient, confirmed appointment and CRM deal created</span><span><i style="background:var(--a3)"></i>Unpaid after 20 minutes: slot released, CRM abandoned-checkout lead</span></div>
+    </div>
+
+    <div class="mini rv">
+      <div class="cell"><h3>Lead operations, bots and finance</h3>
+        <ul><li>Lead dedupe across WhatsApp and web, proven both ways.</li><li>SalesIQ bots: new vs returning split, 6 proactive triggers, lead scoring, human escalation.</li><li>Xero invoice push, payment write-back, void and credit-note rules.</li><li>10+ dashboards: feedback by site and month, catchment revenue maps.</li></ul></div>
+      <div class="cell"><h3>Tellco Europe · Jul 2024 to Feb 2026</h3>
+        <ul><li>Phased Zoho One rollout over 12 to 16 weeks, one organisation per business unit.</li><li>Lead-to-delivery lifecycle, dashboards, access matrix, training and governance plans.</li><li>Shopify to CRM sync saved about 8 hours of manual entry a week.</li><li>84-point Klaviyo test plan and abandoned-cart, welcome and re-engagement flows.</li></ul></div>
+    </div>
+
+    <div style="margin-top:56px" class="rv">
+      <h3 style="font-size:28px;margin-bottom:8px">Leading the Zoho team</h3>
+      <p style="color:var(--muted);margin:0 0 20px;max-width:70ch">I assigned each Zoho module to a named developer, tracked status and set KPIs. I kept CRM, Creator, Flow, SalesIQ and Analytics myself. Every release gets a dry run, a build tag, an SOP update and a handover note.</p>
+      <div class="tw"><table>
+        <thead><tr><th>Area</th><th>Owner</th><th>Scope</th></tr></thead>
+        <tbody>
+          <tr><td>CRM, Creator, Flow</td><td>Me</td><td>Replication, automation, lead-source fixes, live app support</td></tr>
+          <tr><td>SalesIQ, Analytics, Command Center</td><td>Me</td><td>Chat and WhatsApp capture, dashboards, journeys</td></tr>
+          <tr><td>Desk, Recruit</td><td>Developer 2</td><td>Support ticketing build</td></tr>
+          <tr><td>Social, Marketing Automation</td><td>Developer 3</td><td>Posting plan, nurture journeys, scoring</td></tr>
+          <tr><td>Campaigns, Survey</td><td>Developer 4</td><td>Email marketing and feedback surveys</td></tr>
+        </tbody></table></div>
+      <p style="color:var(--muted);margin:16px 0 0;font-size:15px">Nine SOPs maintained, including a 7,500-word Hospital Operations SOP (V7) covering 22+ sections.</p>
+    </div>
+  </div>
+</section>
+
+<!-- HOW I WORK -->
+<section id="how" style="padding:80px 0">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">How I work</div><h2>From requirement to handover.</h2><p>The same five steps on every CRM project, whatever the platform.</p></div>
+    <div class="steps">
+      <div class="st rv"><span>01</span><b>Discover</b><p>Interview the people who use the system, map the process and agree what "done" means.</p></div>
+      <div class="st rv d1"><span>02</span><b>Design</b><p>Data model, roles, automations and integrations, written down before anything is built.</p></div>
+      <div class="st rv d2"><span>03</span><b>Build and test</b><p>Build in a sandbox or dry run, test with real scenarios, tag every release.</p></div>
+      <div class="st rv d3"><span>04</span><b>Go live</b><p>Phased rollout with training, support in the first weeks and a rollback plan.</p></div>
+      <div class="st rv d3"><span>05</span><b>Hand over</b><p>An SOP, a handover note and dashboards so the business can run it without me.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- NUMBERS -->
+<section id="numbers">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">By the numbers</div><h2>What the work adds up to.</h2><p>Counts taken from my project plans and accomplishment logs.</p></div>
+    <div class="charts">
+      <div class="cell rv"><h3>Delivery</h3><p class="sub">What shipped, by count.</p><svg class="chart" id="cDelivery" viewBox="0 0 520 290" role="img" aria-label="Delivery counts"></svg></div>
+      <div class="cell rv d1"><h3>Impact</h3><p class="sub">Measured and recorded results.</p><svg class="chart" id="cImpact" viewBox="0 0 520 290" role="img" aria-label="Impact figures"></svg></div>
+      <div class="cell rv"><h3>Scan catalogue</h3><p class="sub">Partial to complete: +92 types (+32%).</p><svg class="chart" id="cCat" viewBox="0 0 520 150" role="img" aria-label="Scan catalogue grew from 287 to 379"></svg></div>
+      <div class="cell rv d1"><h3>Years by platform</h3><p class="sub">Approximate hands-on time.</p><svg class="chart" id="cYears" viewBox="0 0 520 250" role="img" aria-label="Years of experience by platform"></svg></div>
+      <div class="cell rv"><h3>Employee app</h3><p class="sub">39 logged features and fixes, by area.</p><svg class="chart" id="cEmp" viewBox="0 0 520 220" role="img" aria-label="Employee app features by area"></svg></div>
+      <div class="cell rv d1"><h3>GitHub</h3><p class="sub">9 public repositories, by language.</p><svg class="chart" id="cLang" viewBox="0 0 520 220" role="img" aria-label="Repositories by language"></svg></div>
+    </div>
+  </div>
+</section>
+
+<!-- SALESFORCE -->
+<section id="salesforce" class="alt">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">Salesforce</div><h2>Zoho depth, Salesforce ready.</h2><p>I completed the Salesforce learning track: Administrator and Platform Developer I topics. My Zoho and Deluge background maps closely, so I learned it by rebuilding patterns I already ship.</p></div>
+    <div class="sf">
+      <div class="cell rv glow">
+        <h3>Track completed</h3>
+        <div class="prog">
+          <div class="row"><span>Data modeling</span><em>DONE</em></div><div class="track"><i data-w="100"></i></div>
+          <div class="row"><span>Customize an object</span><em>DONE</em></div><div class="track"><i data-w="100"></i></div>
+          <div class="row"><span>Data security: OWD, roles, sharing, permission sets</span><em>DONE</em></div><div class="track"><i data-w="100"></i></div>
+          <div class="row"><span>Apex, SOQL, Flow and Lightning Web Components</span><em>DONE</em></div><div class="track"><i data-w="100"></i></div>
+        </div>
+        <p style="margin:6px 0 0;font-size:14px">Completed in a Trailhead developer org.</p>
       </div>
-      <div>
-        <h3>Method</h3>
-        <ul>
-          <li><b>KPI framework:</b> on-time delivery, tasks completed, turnaround against SLA, functions and integrations vs planned, defect rate, rework and first-time-right.</li>
-          <li><b>Change control:</b> dry-run or test mode first, a build tag on every release, an SOP update and a handover note.</li>
-          <li><b>Stakeholders:</b> managers, HR, finance, marketing and sales; requirements turned into build tasks and priorities.</li>
-        </ul>
+      <div class="cell rv d1">
+        <h3>Pattern sketch: dedupe in Apex</h3>
+        <p>The same logic I run as a Deluge function in Zoho, written as an Apex trigger. Practice code, not client work.</p>
+<pre><span class="k">trigger</span> LeadDedupe <span class="k">on</span> Lead (before insert) {
+  Set&lt;String&gt; phones = <span class="k">new</span> Set&lt;String&gt;();
+  <span class="k">for</span> (Lead l : Trigger.new) {
+    <span class="k">if</span> (l.Phone != null) phones.add(l.Phone);
+  }
+  Map&lt;String, Lead&gt; seen = <span class="k">new</span> Map&lt;String, Lead&gt;();
+  <span class="k">for</span> (Lead e : [SELECT Id, Phone FROM Lead
+                 WHERE Phone IN :phones]) {
+    seen.put(e.Phone, e);
+  }
+  <span class="k">for</span> (Lead l : Trigger.new) {
+    <span class="k">if</span> (seen.containsKey(l.Phone))
+      l.addError(<span class="s">'Duplicate lead for '</span> + l.Phone);
+  }
+}</pre>
       </div>
     </div>
-  </section>
-
-  <section id="sops">
-    <div class="sec-h"><h2>SOP library</h2><span class="mono">Every system ships with a procedure document</span></div>
-    <div class="tw"><table>
-      <thead><tr><th>Document</th><th>Scope</th></tr></thead>
+    <div class="tw rv" style="margin-top:16px"><table>
+      <thead><tr><th>What I have built in Zoho</th><th>Salesforce equivalent</th></tr></thead>
       <tbody>
-        <tr><td>Hospital Operations SOP (V7)</td><td>About 7,500 words, 22+ sections: diary sync, master data, appointments, invoice routing, Xero sync, payment links, insurance and NHS handling.</td></tr>
-        <tr><td>Employee Management System SOP</td><td>Onboarding, kiosk, rota, timesheets, payroll rules, leave, approvals, troubleshooting.</td></tr>
-        <tr><td>Admin SOP (v3) and rota guide</td><td>Manager procedures: shifts, holidays, approvals, weekly routine, automated emails.</td></tr>
-        <tr><td>SalesIQ Chat Bot SOP</td><td>Answer bot behaviour, escalation, business hours, FAQs, testing checklist.</td></tr>
-        <tr><td>ResponseiQ to CRM SOP</td><td>Call-lead integration, field mapping, telesales actions, troubleshooting.</td></tr>
-        <tr><td>Google Ads to CRM SOP</td><td>Four stages from lead capture to the conversion push and Google-side reporting.</td></tr>
-        <tr><td>Ad Attribution SOP</td><td>Roles, lead handling, payments, weekly conversion checks, exceptions.</td></tr>
-        <tr><td>Zoho Desk SOP</td><td>Departments, roles, tickets, channels, SLAs, workflows, knowledge base.</td></tr>
-        <tr><td>MRI Plus Zoho CRM SOP (v2)</td><td>CRM structure and procedures for the MRI Plus brand.</td></tr>
-      </tbody>
-    </table></div>
-    <p class="mono" style="color:var(--muted);margin:0">The documents are internal; titles and scope only.</p>
-  </section>
+        <tr><td>Custom modules and fields (Lead Canvas, 26 fields)</td><td>Custom objects, fields, page layouts, Lightning record pages</td></tr>
+        <tr><td>Deluge custom functions (invoiceToDeal, dedupe)</td><td>Apex classes and triggers</td></tr>
+        <tr><td>Workflow rules and Flow (35+ automations)</td><td>Salesforce Flow: record-triggered, screen, scheduled</td></tr>
+        <tr><td>COQL queries for investigation</td><td>SOQL</td></tr>
+        <tr><td>Roles, profiles, sharing, access matrix</td><td>Role hierarchy, profiles, permission sets, sharing rules</td></tr>
+        <tr><td>JS widgets (diary week view, rota)</td><td>Lightning Web Components</td></tr>
+        <tr><td>REST integrations: Xero, Twilio, Google Ads</td><td>REST callouts, Named Credentials, Platform Events</td></tr>
+        <tr><td>Dry run, build tag, SOP, handover</td><td>Sandboxes, change sets, release notes</td></tr>
+      </tbody></table></div>
+  </div>
+</section>
 
-  <section id="more">
-    <div class="sec-h"><h2>Background</h2></div>
-    <div class="cols">
-      <div>
-        <h3>Earlier roles</h3>
-        <ul>
-          <li><b>ICT Associate, Tellco Europe</b> (Jul 2024 to Feb 2026): Zoho One rollout and Shopify automation above, plus AWS production support: incidents, EC2 AMI maintenance, CloudWatch.</li>
-          <li><b>Application development and automation, Quantix Capital</b> (Jan 2023 to Jul 2024): internal apps for appointments, feedback and requests for 40+ users; 30+ automations and 20+ reports.</li>
-        </ul>
+<!-- TECHIPULSE -->
+<section id="techipulse" class="alt">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">Content</div><h2>TechiPulse: a tech page I run and write.</h2><p>I created and run TechiPulse, a LinkedIn page about technology and AI. I research each topic, write the caption, design the carousel and post a new piece about every three days.</p></div>
+    <div class="bento">
+      <div class="cell c3 rv"><div class="big" data-n="37" data-s="">0</div><div class="lab">posts published on the page</div></div>
+      <div class="cell c3 rv d1"><div class="big" data-n="120" data-s="">0</div><div class="lab">followers, from my own network and no ad spend</div></div>
+      <div class="cell c3 rv d2"><div class="big" data-n="313" data-s="">0</div><div class="lab">impressions on the best post</div></div>
+      <div class="cell c3 rv d3"><div class="big" data-n="3" data-s=" days">0</div><div class="lab">between new posts, researched and designed by me</div></div>
+    </div>
+    <div class="li rv">
+      <div class="post">
+        <div class="ph">
+          <div class="logo-tp">TP</div>
+          <div class="nm">TechiPulse<small>120 followers · Technology and AI news</small></div>
+          <a class="fol" href="https://www.linkedin.com/company/111328656/" target="_blank" rel="noopener">+ Follow</a>
+        </div>
+        <div class="cap"><b>Nvidia just did something it hasn't done since 2012.</b><br>Six straight weekly declines. About $1.6 trillion in market value gone, and shares have dropped below Apple's. <span class="more">…more</span></div>
+        <div class="car" id="car">
+          <img class="on" src="img/techipulse-slide1.jpg" alt="TechiPulse slide: Nvidia's slide just became its longest since 2012" loading="lazy">
+          <img src="img/techipulse-slide2.jpg" alt="TechiPulse slide: Behind the Slide, five points" loading="lazy">
+          <button class="pv" type="button" aria-label="Previous slide">‹</button><button class="nx" type="button" aria-label="Next slide">›</button>
+          <span class="cnt" id="cnt">1 / 2</span>
+        </div>
+        <div class="react"><span>👍 💡 Reactions</span><span>Comments · Reposts</span></div>
+        <div class="acts"><span>Like</span><span>Comment</span><span>Repost</span><span>Send</span></div>
       </div>
       <div>
-        <h3>Education and certifications</h3>
-        <ul>
-          <li>MSc Cloud Computing (Distinction), University of Leicester, 2024</li>
-          <li>B.Tech Information Technology (Cloud and Security), CGPA 9.08/10, 2023</li>
-          <li>AWS Certified Solutions Architect Associate; AWS Certified Cloud Practitioner</li>
-        </ul>
-        <h3 style="margin-top:18px">On GitHub</h3>
-        <p style="margin:0;color:var(--muted)">Smaller personal projects: an AI job-application assistant, pollution hotspot analysis and student performance analysis in Python, a C# health app, and a Maven app for Jenkins. My Zoho work is client-internal, so it is not public.</p>
+        <h3>Posted on LinkedIn, to a real audience.</h3>
+        <p>This is one of my own TechiPulse posts: a punchy opening line, a two-slide carousel I design, and an A/B vote in the comments. Swipe through the slides on the left.</p>
+        <p>Every post follows the same recipe: a researched story, a surprising hook, a numbered carousel and a clear source line.</p>
+        <a class="inbtn" href="https://www.linkedin.com/company/111328656/" target="_blank" rel="noopener"><i>in</i>Follow TechiPulse on LinkedIn</a>
       </div>
     </div>
-  </section>
+    <div class="charts" style="margin-top:0">
+      <div class="cell rv"><h3>What performed</h3><p class="sub">Impressions on my top posts against a typical post (median about 35).</p><svg class="chart" id="cTop" viewBox="0 0 520 250" role="img" aria-label="Impressions on top TechiPulse posts"></svg></div>
+      <div class="cell rv d1"><h3>What I produce</h3>
+        <div class="feat" style="margin-top:6px">
+          <div><b>Researched stories</b><span>Each topic is checked against two or more sources before it is written.</span></div>
+          <div><b>Designed carousels</b><span>Two-slide 1080 by 1080 PDF carousels in a consistent dark and orange brand style, built from HTML templates.</span></div>
+          <div><b>Captions and hooks</b><span>One punchy opening line or hard number, a swipe prompt, a closing line and 7 to 8 hashtags.</span></div>
+          <div><b>A repeatable workflow</b><span>A scheduled task drafts a new post every three days for me to approve and post.</span></div>
+        </div>
+      </div>
+    </div>
+    <p class="rv" style="color:var(--muted);margin:16px 0 0;font-size:14.5px">Page figures were read from LinkedIn's page analytics in November 2026. Impressions are modest and organic; the useful result is knowing which formats work: a surprising opening line, a PDF carousel and an A/B comment poll.</p>
+  </div>
+</section>
 
-  <footer>
-    <span>Demos and walk-throughs of the employee app, diary widget and lead-to-booking flow are available on request.</span>
-    <span class="mono">Patient data, credentials and internal identifiers are left out.</span>
-  </footer>
-</div>
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">Projects</div><h2>Public code, AI and data.</h2><p>My Zoho work is client-internal. These are on <a href="https://github.com/Prajugowda10" target="_blank" rel="noopener" style="color:var(--a)">GitHub</a>.</p></div>
+    <div class="projects">
+      <a class="proj rv" href="https://github.com/Prajugowda10/table-turn-ai" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a2)">TS</div><span class="arr">↗</span></div><h3>table-turn-ai</h3><p>Restaurant booking web app on React, Vite, Tailwind and Supabase.</p><div class="pills"><span class="pill">React</span><span class="pill">TypeScript</span><span class="pill">Supabase</span></div></a>
+      <a class="proj rv d1" href="https://github.com/Prajugowda10/AIjobApplicationapp" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a)">AI</div><span class="arr">↗</span></div><h3>AI job application assistant</h3><p>Sign in with Google, paste a resume, get AI suggestions, and apply with AI assistance.</p><div class="pills"><span class="pill">JavaScript</span><span class="pill">AI</span></div></a>
+      <a class="proj rv d2" href="https://github.com/Prajugowda10/Identyfing-and-Analyzing-Pollution-Hotsopts_ML" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a3)">ML</div><span class="arr">↗</span></div><h3>Pollution hotspot analysis</h3><p>Identifying and analysing pollution hotspots with machine learning in notebooks.</p><div class="pills"><span class="pill">Python</span><span class="pill">ML</span><span class="pill">Jupyter</span></div></a>
+      <a class="proj rv" href="https://github.com/Prajugowda10/student-performance-analysis" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a4)">DS</div><span class="arr">↗</span></div><h3>Student performance analysis</h3><p>EDA of the UCI dataset (395 maths, 649 Portuguese students): grades by gender, parental education and study habits.</p><div class="pills"><span class="pill">pandas</span><span class="pill">Seaborn</span></div></a>
+      <a class="proj rv d1" href="https://github.com/Prajugowda10/OneHealthApp" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a)">C#</div><span class="arr">↗</span></div><h3>OneHealthApp</h3><p>A health monitoring application written in C#.</p><div class="pills"><span class="pill">C#</span><span class="pill">.NET</span></div></a>
+      <a class="proj rv d2" href="https://github.com/Prajugowda10/my-maven-app" target="_blank" rel="noopener"><div class="top"><div class="ic" style="background:var(--a3)">CI</div><span class="arr">↗</span></div><h3>my-maven-app</h3><p>Maven Java app with a Dockerfile, built to practise a Jenkins pipeline.</p><div class="pills"><span class="pill">Java</span><span class="pill">Docker</span><span class="pill">Jenkins</span></div></a>
+    </div>
+  </div>
+</section>
+
+<!-- DISSERTATION -->
+<section id="research">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">MSc dissertation</div><h2>Identifying and analysing pollution hotspots.</h2><p>My MSc project at the University of Leicester (September 2024): a web application that combines live pollution data, maps and machine-learning forecasts to show where air quality is worst and where it is heading.</p></div>
+    <div class="bento">
+      <div class="cell c3 rv"><div class="big" data-n="12861" data-s="">0</div><div class="lab">word report, 50 pages</div></div>
+      <div class="cell c3 rv d1"><div class="big" data-n="3" data-s="">0</div><div class="lab">forecasting models compared: SARIMA, LSTM, N-BEATS</div></div>
+      <div class="cell c3 rv d2"><div class="big" data-n="5" data-s="">0</div><div class="lab">data sources: EPA, WHO, OpenStreetMap, AirVisual, weatherbit</div></div>
+      <div class="cell c3 rv d3"><div class="big" data-n="60" data-s="%">0</div><div class="lab">lower forecast error (MAE) for LSTM than SARIMA</div></div>
+    </div>
+    <div class="charts" style="margin-top:16px">
+      <div class="cell rv"><h3>Forecast error, lower is better</h3><p class="sub">LSTM against the SARIMA baseline on the same air quality data.</p><svg class="chart" id="cDis" viewBox="0 0 520 190" role="img" aria-label="LSTM versus SARIMA forecast error"></svg></div>
+      <div class="cell rv d1"><h3>What I built</h3>
+        <div class="feat" style="margin-top:6px">
+          <div><b>Data pipeline</b><span>Collected, cleaned and combined government, open and real-time API data on pollutants and weather.</span></div>
+          <div><b>Interactive web app</b><span>A Streamlit app with maps, customisable charts, data filters and hotspot identification, designed from user personas and use cases.</span></div>
+          <div><b>Forecasting</b><span>Trained and evaluated three models. LSTM was the best overall and was picked for most pollutants; N-BEATS won on a few.</span></div>
+          <div><b>Evaluation</b><span>Compared models on MAE and RMSE, then wrote up the challenges and future work.</span></div>
+        </div>
+      </div>
+    </div>
+    <div class="pills rv" style="margin-top:18px"><span class="pill g">Python</span><span class="pill">Streamlit</span><span class="pill">LSTM</span><span class="pill">N-BEATS</span><span class="pill">SARIMA</span><span class="pill">Plotly</span><span class="pill">GIS and OpenStreetMap</span><span class="pill">Time series</span><a class="pill" href="https://github.com/Prajugowda10/Identyfing-and-Analyzing-Pollution-Hotsopts_ML" target="_blank" rel="noopener">Code on GitHub ↗</a></div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="alt">
+  <div class="wrap">
+    <div class="sh rv"><div class="eyebrow">Skills</div><h2>The toolkit.</h2></div>
+    <div class="skills">
+      <div class="cell rv"><h3>CRM and low-code</h3><div class="pills"><span class="pill g">Zoho CRM</span><span class="pill g">Creator</span><span class="pill g">Flow</span><span class="pill">Analytics</span><span class="pill">Desk</span><span class="pill">SalesIQ</span><span class="pill">Campaigns</span><span class="pill o">Salesforce</span><span class="pill o">HubSpot</span><span class="pill o">Dynamics 365</span></div></div>
+      <div class="cell rv d1"><h3>Languages</h3><div class="pills"><span class="pill g">Deluge</span><span class="pill g">Python</span><span class="pill g">JavaScript</span><span class="pill g">React</span><span class="pill">TypeScript</span><span class="pill">Node.js</span><span class="pill">SQL</span><span class="pill">Java</span><span class="pill">C#</span><span class="pill o">Apex</span></div></div>
+      <div class="cell rv d2"><h3>Integrations</h3><div class="pills"><span class="pill">REST APIs</span><span class="pill">Xero</span><span class="pill">Twilio</span><span class="pill">WhatsApp</span><span class="pill">Google Ads</span><span class="pill">Shopify</span><span class="pill">Zapier</span><span class="pill">Klaviyo</span><span class="pill g">CloudTalk</span><span class="pill">Cloudflare Workers</span></div></div>
+      <div class="cell rv"><h3>Cloud and DevOps</h3><div class="pills"><span class="pill">AWS EC2</span><span class="pill">S3</span><span class="pill">IAM</span><span class="pill">Lambda</span><span class="pill">CloudWatch</span><span class="pill">Terraform</span><span class="pill">Docker</span><span class="pill">Git</span><span class="pill">Jenkins</span><span class="pill g">Cloudflare</span></div></div>
+      <div class="cell rv d1"><h3>AI, ML and data</h3><div class="pills"><span class="pill g">Machine learning</span><span class="pill g">Time-series forecasting</span><span class="pill g">LSTM</span><span class="pill">N-BEATS</span><span class="pill">SARIMA</span><span class="pill g">Streamlit</span><span class="pill">LLM apps</span><span class="pill">Zia AI</span><span class="pill">Claude Code</span><span class="pill">pandas</span><span class="pill">scikit-learn</span><span class="pill">Jupyter</span><span class="pill">Tableau</span></div></div>
+      <div class="cell rv d2"><h3>Delivery</h3><div class="pills"><span class="pill">Requirements</span><span class="pill">Stakeholders</span><span class="pill">SOP writing</span><span class="pill">Change control</span><span class="pill">Training</span><span class="pill">Team lead</span></div></div>
+    </div>
+    <div class="bento" style="margin-top:16px">
+      <div class="cell c4 rv"><h3>Certifications</h3><p>AWS Certified Solutions Architect, Associate<br>AWS Certified Cloud Practitioner<br>Google Analytics Certified</p></div>
+      <div class="cell c4 rv d1"><h3>MSc Cloud Computing</h3><p>Distinction, University of Leicester, 2024. Dissertation on pollution hotspot forecasting.</p></div>
+      <div class="cell c4 rv d2"><h3>B.Tech Information Technology</h3><p>Cloud and Security, CGPA 9.08 / 10, Bengaluru, 2023</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="wrap">
+    <div class="sh rv" style="margin-left:auto;margin-right:auto;text-align:center"><div class="eyebrow" style="justify-content:center">Journey</div><h2>From cloud engineer to CRM lead.</h2></div>
+    <div class="tl">
+      <div class="it rv"><div class="when">NOV 2026</div><h3>Diagnostic imaging website and booking engine</h3><p>Cloudflare Worker booking API, WordPress and Next.js. Final stage, going live this week.</p></div>
+      <div class="it rv"><div class="when">AUG 2026</div><h3>Salesforce track completed</h3><p>Administrator and Platform Developer I topics in a Trailhead developer org.</p></div>
+      <div class="it rv"><div class="when">OCT 2026 TO NOW</div><h3>Private hospital group: CRM migration lead</h3><p>12 phases, 69 subtasks. Booking, diary, invoicing and payments moved into CRM.</p></div>
+      <div class="it rv"><div class="when">MAR 2026 TO NOW</div><h3>Private hospital group: CRM developer and consultant</h3><p>Employee app for 400+ staff, CloudTalk phone system for about 20 users, 35+ automations, Google Ads attribution, SalesIQ bots, Xero, 10+ dashboards, team lead.</p></div>
+      <div class="it rv"><div class="when">EARLY 2026 TO NOW</div><h3>TechiPulse: founder and writer</h3><p>A tech and AI LinkedIn page. 37 posts, 120 followers, a new researched carousel about every three days.</p></div>
+      <div class="it rv"><div class="when">JUL 2024 TO FEB 2026</div><h3>Tellco Europe: ICT Associate</h3><p>Zoho One rollout, Shopify and Zapier sync, Klaviyo flows, AWS production support.</p></div>
+      <div class="it rv"><div class="when">SEP 2024</div><h3>MSc dissertation: pollution hotspots</h3><p>A web app with maps and LSTM, N-BEATS and SARIMA air quality forecasts. University of Leicester.</p></div>
+      <div class="it rv"><div class="when">2024</div><h3>MSc Cloud Computing, Distinction</h3><p>University of Leicester.</p></div>
+      <div class="it rv"><div class="when">JAN 2023 TO JUL 2024</div><h3>Quantix Capital: junior cloud engineer</h3><p>AWS operations, Terraform, CloudWatch. Internal apps and 30+ automations for 40+ users.</p></div>
+      <div class="it rv"><div class="when">2023</div><h3>B.Tech Information Technology</h3><p>CGPA 9.08 / 10, Cloud and Security specialisation.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact" style="padding-top:20px">
+  <div class="wrap">
+    <div class="cta-box rv">
+      <h2>Need a CRM developer? <span class="grad">Let's talk.</span></h2>
+      <p>Open to CRM developer and consultant roles across Salesforce, Zoho, HubSpot and Microsoft Dynamics 365. Demos of the employee app, diary widget and lead-to-booking flow are available on request.</p>
+      <div class="cta">
+        <a class="btn p" href="Prajwal_Ramachandra_CV.pdf" download>Download my CV ↓</a>
+        <a class="btn" href="https://www.linkedin.com/in/prajwal10" target="_blank" rel="noopener">LinkedIn</a>
+        <a class="btn" href="https://github.com/Prajugowda10" target="_blank" rel="noopener">GitHub</a>
+      </div>
+      <div class="cform">
+        <div class="ci">
+          <h3>Send me a message</h3>
+          <p>Recruiters and hiring managers: tell me about the role and I will reply by email, usually within a day.</p>
+          <ul><li><b>Roles:</b> CRM, Salesforce, Zoho, HubSpot, Dynamics 365</li><li><b>Location:</b> Leicester, UK, open to remote and hybrid</li><li><b>Email:</b> prajwalsemailid@gmail.com</li></ul>
+        </div>
+        <form class="f" id="cf" novalidate>
+          <input class="hp" type="text" name="botcheck" tabindex="-1" autocomplete="off" aria-hidden="true">
+          <div class="row">
+            <label>Your name<input type="text" name="name" required autocomplete="name"></label>
+            <label>Your email<input type="email" name="email" required autocomplete="email"></label>
+          </div>
+          <div class="row">
+            <label>Company<input type="text" name="company" autocomplete="organization"></label>
+            <label>I'm hiring for<select name="role"><option>CRM Developer</option><option>Salesforce role</option><option>Zoho role</option><option>HubSpot role</option><option>Dynamics 365 role</option><option>Something else</option></select></label>
+          </div>
+          <label>Message<textarea name="message" required></textarea></label>
+          <button class="btn p" type="submit">Send message</button>
+          <div class="msg" id="cmsg" role="status" aria-live="polite"></div>
+        </form>
+      </div>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© 2026 Prajwal Ramachandra · Leicester, UK</span><span class="mono">Patient data, credentials and internal identifiers are left out.</span></div></footer>
 
 <script>
 (function(){
-  var b=document.getElementById('copyMail'),m=document.getElementById('mail');
-  if(!b||!m)return;
-  b.addEventListener('click',function(){
-    var t=m.textContent.trim();
-    function sel(){var r=document.createRange();r.selectNodeContents(m);var s=getSelection();s.removeAllRanges();s.addRange(r);b.textContent='Selected';}
-    try{navigator.clipboard.writeText(t).then(function(){b.textContent='Copied';setTimeout(function(){b.textContent='Copy'},1800)},sel)}catch(e){sel()}
+  var root=document.documentElement;
+  try{var t=localStorage.getItem('theme');if(t)root.setAttribute('data-theme',t)}catch(e){}
+  document.getElementById('theme').addEventListener('click',function(){
+    var n=root.getAttribute('data-theme')==='light'?'dark':'light';root.setAttribute('data-theme',n);
+    try{localStorage.setItem('theme',n)}catch(e){}
   });
+  var links=document.getElementById('links');
+  document.getElementById('menu').addEventListener('click',function(){links.classList.toggle('open')});
+  links.addEventListener('click',function(){links.classList.remove('open')});
+
+  /* count-up */
+  function countUp(el){
+    var to=+el.dataset.n,s=el.dataset.s||'',t0=null;
+    function f(t){t0=t0||t;var p=Math.min((t-t0)/1100,1),e=1-Math.pow(1-p,3);
+      el.textContent=Math.round(to*e)+(p===1?s:'');if(p<1)requestAnimationFrame(f)}
+    requestAnimationFrame(f);
+  }
+
+  /* charts */
+  var NS='http://www.w3.org/2000/svg';
+  function el(n,a,p,t){var e=document.createElementNS(NS,n);for(var k in a)e.setAttribute(k,a[k]);if(t!=null)e.textContent=t;if(p)p.appendChild(e);return e}
+  function grow(b,w){requestAnimationFrame(function(){requestAnimationFrame(function(){b.setAttribute('width',w)})})}
+  function hbar(id,rows,color,max){
+    var svg=document.getElementById(id),rowH=Math.floor(280/rows.length),lw=178,bw=262;
+    max=max||Math.max.apply(null,rows.map(function(r){return r[1]}));
+    rows.forEach(function(r,i){
+      var y=i*rowH+6,h=Math.min(18,rowH-10);
+      el('text',{x:0,y:y+h-4,class:'lbl'},svg,r[0]);
+      el('rect',{x:lw,y:y,width:bw,height:h,rx:5,class:'bg'},svg);
+      var b=el('rect',{x:lw,y:y,width:0,height:h,rx:5,fill:color,class:'bar'},svg);
+      el('text',{x:lw+bw+8,y:y+h-4,class:'val'},svg,r[2]||r[1]);
+      grow(b,Math.max(5,bw*r[1]/max));
+    });
+  }
+  function donut(id,data,colors){
+    var svg=document.getElementById(id),cx=105,cy=110,R=90,r=56,tot=data.reduce(function(a,d){return a+d[1]},0),a0=-Math.PI/2;
+    data.forEach(function(d,i){
+      var a1=a0+2*Math.PI*d[1]/tot,lg=a1-a0>Math.PI?1:0;
+      function pt(a,rad){return (cx+rad*Math.cos(a)).toFixed(2)+' '+(cy+rad*Math.sin(a)).toFixed(2)}
+      el('path',{d:'M'+pt(a0,R)+' A'+R+' '+R+' 0 '+lg+' 1 '+pt(a1-.015,R)+' L'+pt(a1-.015,r)+' A'+r+' '+r+' 0 '+lg+' 0 '+pt(a0,r)+' Z',fill:colors[i%colors.length]},svg);
+      var y=24+i*32;
+      el('rect',{x:240,y:y-10,width:12,height:12,rx:3,fill:colors[i%colors.length]},svg);
+      el('text',{x:262,y:y,class:'lbl'},svg,d[0]);
+      el('text',{x:500,y:y,class:'val','text-anchor':'end'},svg,d[1]);
+      a0=a1;
+    });
+    el('text',{x:cx,y:cy+4,'text-anchor':'middle',style:'font-size:28px;font-family:var(--display);font-weight:800;fill:var(--fg)'},svg,tot);
+    el('text',{x:cx,y:cy+22,'text-anchor':'middle'},svg,'total');
+  }
+  var C={
+    cDelivery:function(){hbar('cDelivery',[['CRM tasks (master plan)',150,'150+'],['Migration subtasks',69,'69'],['Accomplishments logged',58,'58'],['Employee app features',39,'39'],['Automation workflows',35,'35+'],['Migration phases',12,'12'],['Dashboards',10,'10+'],['SOP documents',9,'9']],'var(--a)',150)},
+    cImpact:function(){hbar('cImpact',[['Staff on employee app',400,'400+'],['Daily users on CloudTalk',20,'~20'],['Scan types, complete',379,'379'],['Rows synced, 0 failures',301,'301'],['Appointments synced',190,'~190'],['Google conversions, 30 days',188,'188'],['Patient links backfilled',184,'184'],['Phone numbers repaired',128,'128']],'var(--a3)',400)},
+    cTop:function(){hbar('cTop',[['Chinese EV post',313],['World Cup smart ball',129],['NVIDIA ROI debate',107],['Tech layoffs 2026',97],['Typical post (median)',35,'~35']],'var(--a)',313)},
+    cDis:function(){hbar('cDis',[['LSTM  MAE',0.385,'0.385'],['SARIMA  MAE',0.968,'0.968'],['LSTM  RMSE',0.589,'0.589'],['SARIMA  RMSE',1.185,'1.185']],'var(--a)',1.185)},
+    cCat:function(){var c=document.getElementById('cCat');
+      [['Before: partial',287,'var(--grid)'],['After: complete',379,'var(--a)']].forEach(function(d,i){
+        var y=14+i*68;el('text',{x:0,y:y,class:'lbl'},c,d[0]);
+        el('rect',{x:0,y:y+10,width:520,height:30,rx:8,class:'bg'},c);
+        var b=el('rect',{x:0,y:y+10,width:0,height:30,rx:8,fill:d[2],class:'bar'},c);
+        el('text',{x:i?452:8,y:y+30,class:'val',style:i?'fill:var(--ink)':''},c,d[1]);
+        grow(b,520*d[1]/379)})},
+    cYears:function(){hbar('cYears',[['Zoho CRM and Creator',4,'4 yrs'],['Deluge',4,'4 yrs'],['Python',4,'4 yrs'],['AWS',3.5,'3.5 yrs'],['JavaScript',3,'3 yrs'],['SQL',3,'3 yrs'],['Salesforce',0.5,'0.5 yr']],'var(--a2)',4)},
+    cEmp:function(){donut('cEmp',[['Rota and timesheet',10],['Hours and payroll rules',8],['Attendance and kiosk',6],['Notifications',6],['Leave',3],['Audit, access, research',6]],['#ffc83d','#ff7a18','#e8452c','#ffe08a','#b45309','#8a7560'])},
+    cLang:function(){donut('cLang',[['Python and notebooks',4],['JavaScript and TypeScript',2],['Java',1],['C#',1],['HTML',1]],['#ffc83d','#ff7a18','#e8452c','#ffe08a','#b45309'])}
+  };
+
+  /* contact form: set WEB3FORMS_KEY (free key from web3forms.com, sent to your email) */
+  (function(){
+    var WEB3FORMS_KEY='';
+    var TO='prajwalsemailid@gmail.com';
+    var f=document.getElementById('cf');if(!f)return;
+    var m=document.getElementById('cmsg');
+    f.addEventListener('submit',function(e){
+      e.preventDefault();
+      var d=new FormData(f);
+      if(d.get('botcheck'))return;
+      var name=(d.get('name')||'').trim(),email=(d.get('email')||'').trim(),msg=(d.get('message')||'').trim();
+      if(!name||!/^\S+@\S+\.\S+$/.test(email)||!msg){m.className='msg err';m.textContent='Please add your name, a valid email and a message.';return}
+      var btn=f.querySelector('button');
+      var subject='Portfolio enquiry: '+d.get('role')+(d.get('company')?' at '+d.get('company'):'');
+      if(!WEB3FORMS_KEY){
+        location.href='mailto:'+TO+'?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(msg+'\n\n'+name+'\n'+email+(d.get('company')?'\n'+d.get('company'):''));
+        m.className='msg ok';m.textContent='Opening your email app to send this.';return;
+      }
+      btn.disabled=true;btn.textContent='Sending...';
+      fetch('https://api.web3forms.com/submit',{method:'POST',headers:{'Content-Type':'application/json',Accept:'application/json'},
+        body:JSON.stringify({access_key:WEB3FORMS_KEY,subject:subject,from_name:name,name:name,email:email,company:d.get('company'),role:d.get('role'),message:msg,botcheck:''})})
+      .then(function(r){return r.json()}).then(function(j){
+        if(j.success){m.className='msg ok';m.textContent='Thanks '+name.split(' ')[0]+', your message is sent. I will reply by email soon.';f.reset()}
+        else throw new Error(j.message||'failed')
+      }).catch(function(){m.className='msg err';m.textContent='Sorry, that did not send. Please email '+TO+' directly.'})
+      .finally(function(){btn.disabled=false;btn.textContent='Send message'});
+    });
+  })();
+
+  /* linkedin carousel */
+  (function(){
+    var car=document.getElementById('car');if(!car)return;
+    var im=car.querySelectorAll('img'),c=document.getElementById('cnt'),i=0;
+    function go(n){i=(n+im.length)%im.length;im.forEach(function(x,k){x.classList.toggle('on',k===i)});c.textContent=(i+1)+' / '+im.length}
+    car.querySelector('.pv').addEventListener('click',function(){go(i-1)});
+    car.querySelector('.nx').addEventListener('click',function(){go(i+1)});
+  })();
+
+  /* reveal + triggers */
+  var io=new IntersectionObserver(function(es){es.forEach(function(e){
+    if(!e.isIntersecting)return;var n=e.target;io.unobserve(n);n.classList.add('in');
+    n.querySelectorAll('[data-n]').forEach(countUp);
+    n.querySelectorAll('.track i').forEach(function(i){i.style.width=i.dataset.w+'%'});
+    n.querySelectorAll('svg.chart').forEach(function(s){if(C[s.id]&&!s.dataset.d){s.dataset.d=1;C[s.id]()}});
+  })},{threshold:.15,rootMargin:'0px 0px -6% 0px'});
+  document.querySelectorAll('.rv').forEach(function(n){io.observe(n)});
+
+  /* active nav link */
+  var secs=['platforms','about','work','numbers','salesforce','techipulse','projects','research','skills','journey'].map(function(i){return document.getElementById(i)});
+  var al=[].slice.call(links.querySelectorAll('a'));
+  addEventListener('scroll',function(){
+    var y=scrollY+120,cur=-1;secs.forEach(function(s,i){if(s.offsetTop<=y)cur=i});
+    al.forEach(function(a,i){a.classList.toggle('on',i===cur)});
+  },{passive:true});
 })();
 </script>
-
-</body></html>
+</body>
+</html>
